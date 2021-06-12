@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
 const name = 'Milad E. Fahmy'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'Milad E. Fahmy'
 
 export default function Layout({ children, home }) {
     return (
@@ -14,7 +14,7 @@ export default function Layout({ children, home }) {
           <link rel="icon" href="/favicon.ico" />
           <meta
             name="description"
-            content="Learn how to build a personal website using Next.js"
+            content="Milad E. Fahmy' blog post website"
           />
           <meta
             property="og:image"
@@ -32,8 +32,8 @@ export default function Layout({ children, home }) {
                 priority
                 src="/images/profile.png"
                 className={utilStyles.borderCircle}
-                height={144}
-                width={144}
+                height={200}
+                width={200}
                 alt={name}
               />
               <h1 className={utilStyles.heading2Xl}>{name}</h1>

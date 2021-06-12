@@ -54,3 +54,6 @@
     background-color: yellow;
     font-size: 0.5rem;
   }
+  .post{
+    word-wrap: break-word;
+  }

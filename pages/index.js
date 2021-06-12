@@ -23,7 +23,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hello, I'm Milad. I'm software engineer at Sakneen and CEO at Egybeca. You can connect me on <a href='https://www.linkedin.com/in/miladezzat' target='_blank'>LinkedIn</a></p>
+        <p>Hello, I'm Milad. I'm software engineer at Sakneen and Photographer. You can connect me on <a href='https://www.linkedin.com/in/miladezzat' target='_blank'>LinkedIn</a></p>
       </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
@@ -32,7 +32,7 @@ export default function Home({ allPostsData }) {
           {allPostsData.map(({ id, created, title, tags }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={"/posts/" + id} key={id}>{title}</Link>              
-              {tags.map(tag => (
+              {tags?.map(tag => (
                 <span className={utilStyles.tag} key={tag}> #{tag}</span>
               ))}
               <br />

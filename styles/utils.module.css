@@ -50,3 +50,7 @@
   .lightText {
     color: #666;
   }
+  .tag{
+    background-color: yellow;
+    font-size: 0.5rem;
+  }

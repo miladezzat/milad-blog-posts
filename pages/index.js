@@ -23,17 +23,20 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hello, I'm Milad. I'm software engineer at Sakneen and CEO at Egybeca. You connect me on <a href='https://www.linkedin.com/in/miladezzat' target='_blank'>LinkedIn</a></p>
+        <p>Hello, I'm Milad. I'm software engineer at Sakneen and CEO at Egybeca. You can connect me on <a href='https://www.linkedin.com/in/miladezzat' target='_blank'>LinkedIn</a></p>
       </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
+          {allPostsData.map(({ id, created, title, tags }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={"/posts/" + id} key={id}>{title}</Link>
+              <Link href={"/posts/" + id} key={id}>{title}</Link>              
+              {tags.map(tag => (
+                <span className={utilStyles.tag} key={tag}> #{tag}</span>
+              ))}
               <br />
-              {date}
+              <Date dateString={created} />
             </li>
           ))}
         </ul>

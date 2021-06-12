@@ -1,7 +1,7 @@
 ---
 tags: [TypeScript]
 title: Functions
-date: '2021-06-11T09:52:02.396Z'
+created: '2021-06-11T09:52:02.396Z'
 modified: '2021-06-11T11:35:34.099Z'
 ---
 

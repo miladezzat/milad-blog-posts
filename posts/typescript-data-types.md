@@ -1,7 +1,7 @@
 ---
 tags: [TypeScript]
 title: Type Inferences
-date: '2021-06-10T09:32:56.283Z'
+created: '2021-06-10T09:32:56.283Z'
 modified: '2021-06-10T16:37:52.129Z'
 ---
 
@@ -24,7 +24,7 @@ ___________________________________
 <p> The bulit-in types in JavaScript each have known properties and methods that always exist. All `string`s for example, are known to have s `.length` property and `.toLowerCase()` method </p>
 
 > TypeScript's `tsc` command will let you know if your code tried to access properties and methods that don't exist:
-```ts
+```javascript
   "My".toLowercase();
    // Property 'toLowercase' does not exist on type '"MY"'.
    // Did you mean 'toLowerCase'? 

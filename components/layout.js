@@ -12,6 +12,7 @@ export default function Layout({ children, home }) {
       <div className={styles.container}>
         <Head>
           <link rel="icon" href="/favicon.ico" />
+          <meta name="google-site-verification" content="_-p2XdKwtGd6MPXJye2VTAIfwoQtDxLoelu7ojSoNqM" />
           <meta
             name="description"
             content="Milad E. Fahmy' blog post website"

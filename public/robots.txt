@@ -1,1 +1,1 @@
-User-Agent: *Disallow:Sitemap: https://blog-posts-beta.vercel.app/
+User-Agent: *Disallow:Sitemap: https://milad-ezzat.vercel.app/

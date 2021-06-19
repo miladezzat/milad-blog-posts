@@ -32,11 +32,10 @@ export default function Home({ allPostsData }) {
           {allPostsData.map(({ id, created, title, tags, readingTime }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={"/posts/" + id} key={id}>{title}</Link>              
-              {tags?.map(tag => (
-                <span className={utilStyles.tag} key={tag}> #{tag}</span>
-              ))}
-              <br />
               <Date dateString={created} readingTime={readingTime} />
+              {tags?.map(tag => (
+                <span className={utilStyles.tag} key={tag}>#{tag}</span>
+              ))}              
             </li>
           ))}
         </ul>

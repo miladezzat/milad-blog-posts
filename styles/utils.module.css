@@ -52,7 +52,9 @@
   }
   .tag{
     background-color: yellow;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
+    display: block;
+    width: fit-content;
   }
   .post{
     word-wrap: break-word;

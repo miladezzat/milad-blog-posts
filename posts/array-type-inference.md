@@ -9,6 +9,7 @@ modified: '2021-06-13T20:02:28.049Z'
 <p>
 TypeScript can infer variable types from initial values and return statements. Even still, we may not know exactly what type inference to expect when dealing with arrays. For example: </p>
 
+
 ```ts
   let examAnswer = [true, false, false]
 ```

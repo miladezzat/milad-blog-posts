@@ -8,67 +8,63 @@ const name = 'Milad E. Fahmy'
 export const siteTitle = 'Milad E. Fahmy'
 
 export default function Layout({ children, home }) {
-    return (
-      <div className={styles.container}>
-        <Head>
-          <link rel="icon" href="/favicon.ico" />
-          <meta name="google-site-verification" content="_-p2XdKwtGd6MPXJye2VTAIfwoQtDxLoelu7ojSoNqM" />
-          <meta
-            name="description"
-            content="Milad E. Fahmy' blog post website"
-          />
-          <meta
-            property="og:image"
-            content={`https://og-image.vercel.app/${encodeURI(
-              siteTitle
-            )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-          />
-          <meta name="og:title" content={siteTitle} />
-          <meta name="twitter:card" content="summary_large_image" />
-        </Head>
-        <header className={styles.header}>
-          {home ? (
-            <>
-              <Image
-                priority
-                src="/images/profile.png"
-                className={utilStyles.borderCircle}
-                height={200}
-                width={200}
-                alt={name}
-              />
-              <h1 className={utilStyles.heading2Xl}>{name}</h1>
-            </>
-          ) : (
-            <>
-              <Link href="/">
-                <a>
-                  <Image
-                    priority
-                    src="/images/profile.png"
-                    className={utilStyles.borderCircle}
-                    height={144}
-                    width={144}
-                    alt={name}
-                  />
-                </a>
-              </Link>
-              <h2 className={utilStyles.headingLg}>
-                <Link href="/">
-                  <a className={utilStyles.colorInherit}>{name}</a>
-                </Link>
-              </h2>
-            </>
-          )}
-        </header>
-        <main>{children}</main>
-        {!home && (
-          <div className={styles.backToHome}>
+  return (
+    <div className={styles.container}>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="google-site-verification" content="_-p2XdKwtGd6MPXJye2VTAIfwoQtDxLoelu7ojSoNqM" />
+        <meta name="description" content="Milad Ezzat, A Software Engineer with industry experience building web services. Specializing in Full Stack development with Node.js, Reactjs." />
+        <meta name="keywords" content="HTML, CSS, JavaScript, node.js, developer, software engineer" />
+        <meta name="author" content="Milad E. Fahmy" />
+        <meta property="og:description" content="Milad Ezzat, A Software Engineer with industry experience building web services. Specializing in Full Stack development with Node.js, Reactjs." />
+        <meta name="twitter:description" content="Milad Ezzat, A Software Engineer with industry experience building web services. Specializing in Full Stack development with Node.js, Reactjs." />
+        <meta property="og:image"content= "/images/profile.png" />
+        <meta name="og:title" content={siteTitle} />
+        <meta name="twitter:card" content="/images/profile.png" />
+      </Head>
+      <header className={styles.header}>
+        {home ? (
+          <>
+            <Image
+              priority
+              src="/images/profile.png"
+              className={utilStyles.borderCircle}
+              height={200}
+              width={200}
+              alt={name}
+            />
+            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+          </>
+        ) : (
+          <>
             <Link href="/">
-              <a>← Back to home</a>
+              <a>
+                <Image
+                  priority
+                  src="/images/profile.png"
+                  className={utilStyles.borderCircle}
+                  height={144}
+                  width={144}
+                  alt={name}
+                />
+              </a>
             </Link>
-          </div>
+            <h2 className={utilStyles.headingLg}>
+              <Link href="/">
+                <a className={utilStyles.colorInherit}>{name}</a>
+              </Link>
+            </h2>
+          </>
         )}
-      </div>
-    )
-  }
+      </header>
+      <main>{children}</main>
+      {!home && (
+        <div className={styles.backToHome}>
+          <Link href="/">
+            <a>← Back to home</a>
+          </Link>
+        </div>
+      )}
+    </div>
+  )
+}

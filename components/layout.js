@@ -10,10 +10,23 @@ export const siteTitle = 'Milad E. Fahmy'
 
 export default function Layout({ children, home }) {
   const [email, setEmail] = useState('');
-  const handleSubmit = (e) => { 
-    e.preventDefault();    
-    console.log(email);
+  const [message, setMessage] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     setEmail('');
+    const response = await fetch('/api/subscribe', {
+      method: 'POST',
+      mode: 'cors',
+      cache: 'no-cache',
+      credentials: 'same-origin',
+      headers: { 'Content-Type': 'application/json' },
+      redirect: 'follow',
+      referrerPolicy: 'no-referrer',
+      body: JSON.stringify({ email })
+    });
+    const data = await response.json();
+    setMessage(data.message);
   }
   return (
     <div className={styles.container}>
@@ -100,6 +113,7 @@ export default function Layout({ children, home }) {
           />
           <input className={styles.submitBtn} type="submit" value="subscribe" />
         </form>
+        {message && (<p>{message}</p>)}
         <p>I won’t send you spam. Unsubscribe at any time.</p>
       </div>
     </div>

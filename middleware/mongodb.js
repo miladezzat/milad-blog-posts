@@ -5,14 +5,22 @@ const connectDB = handler => async (req, res) => {
         // Use current db connection
         return handler(req, res);
     }
-    // Use new db connection
-    await mongoose.connect(process.env.mongodbUrl, {
-        useUnifiedTopology: true,
-        useFindAndModify: false,
-        useCreateIndex: true,
-        useNewUrlParser: true
-    });
-    
+    try {
+        // Use new db connection
+        await mongoose.connect(process.env.mongodbUrl, {
+            auth: {
+                "password": 'Y105in1whGeleVDi',
+                "user": 'miladezzat',
+            },
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+            useFindAndModify: false,
+            useCreateIndex: true,
+        });
+    } catch (error) {
+        console.log(error);
+    }
+
     return handler(req, res);
 };
 

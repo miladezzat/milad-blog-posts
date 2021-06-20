@@ -23,7 +23,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hello, I'm Milad. I'm Software Engineer and Photographer. You can connect me on <a href='https://www.linkedin.com/in/miladezzat' target='_blank'> LinkedIn </a> I share what I learned about Software Engineering, Productivity, and building new habits on my <a  href='https://www.youtube.com/channel/UCewDJdWsup1lIgiV8v7dNnQ' target='_blank'> Youtube channel </a> and blog. Feel free to join my newsletter to follow along.
+        <p>Hello, I'm Milad. I'm Software Engineer and Photographer. You can connect me on <a href='https://www.linkedin.com/in/miladezzat' target='_blank' rel="noopener"> LinkedIn </a> I share what I learned about Software Engineering, Productivity, and building new habits on my <a  href='https://www.youtube.com/channel/UCewDJdWsup1lIgiV8v7dNnQ' target='_blank' rel="noopener"> Youtube channel </a> and blog. Feel free to join my newsletter to follow along.
         </p>
       </section>
 
@@ -35,8 +35,8 @@ export default function Home({ allPostsData }) {
               <Link href={"/posts/" + id} key={id}>{title}</Link>              
               <Date dateString={created} readingTime={readingTime} />
               {tags?.map(tag => (
-                <span className={utilStyles.tag} key={tag}>#{tag}</span>
-              ))}              
+                <span><span className={utilStyles.tag} key={tag}>#{tag} </span><span>&nbsp;</span></span>
+              ))}
             </li>
           ))}
         </ul>

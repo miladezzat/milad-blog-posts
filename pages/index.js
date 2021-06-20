@@ -35,7 +35,7 @@ export default function Home({ allPostsData }) {
               <Link href={"/posts/" + id} key={id}>{title}</Link>              
               <Date dateString={created} readingTime={readingTime} />
               {tags?.map(tag => (
-                <span><span className={utilStyles.tag} key={tag}>#{tag} </span><span>&nbsp;</span></span>
+                <span key={`${tag}-${id}`}><span className={utilStyles.tag} key={tag}>#{tag} </span>&nbsp;</span>
               ))}
             </li>
           ))}

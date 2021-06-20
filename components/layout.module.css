@@ -13,3 +13,26 @@
   .backToHome {
     margin: 3rem 0 0;
   }
+  .footer{
+    background-color: #252526;
+    padding: 1%;
+    color: #ffffff;
+    text-align: center;
+  }
+  .emailInput{
+    line-height: 2rem;
+    padding: 1px 3px;
+    font-size: 1.2rem;
+    border: none;
+    width: 60%;
+    border-radius: 5px;
+  }
+  .submitBtn{
+    padding: 1px 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 1.2rem;
+    margin-left: 5px;
+    line-height: 2rem;
+  }

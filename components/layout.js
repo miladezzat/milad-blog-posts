@@ -3,11 +3,18 @@ import Image from 'next/image';
 import styles from "./layout.module.css";
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import { useState } from 'react';
 
 const name = 'Milad E. Fahmy'
 export const siteTitle = 'Milad E. Fahmy'
 
 export default function Layout({ children, home }) {
+  const [email, setEmail] = useState('');
+  const handleSubmit = (e) => { 
+    e.preventDefault();    
+    console.log(email);
+    setEmail('');
+  }
   return (
     <div className={styles.container}>
       <Head>
@@ -21,7 +28,8 @@ export default function Layout({ children, home }) {
         <meta property="og:image" content="/images/profile.png" />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="/images/profile.png" />
-        <div dangerouslySetInnerHTML={{ __html: `
+        <div dangerouslySetInnerHTML={{
+          __html: `
           <!-- Global site tag (gtag.js) - Google Analytics -->
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ2KJXR4P6"></script>
           <script>
@@ -75,6 +83,25 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+      <div className={styles.footer}>
+        <h1>Subscribe to the Newsletter</h1>
+        <p>Subscribe to get my latest content by email.</p>
+        <form onSubmit={handleSubmit}>
+          <input
+            className={styles.emailInput}
+            type="email"
+            placeholder="enter your email"
+            value={email}
+            onChange={async (e) => {
+              const { value } = e.currentTarget;
+              setEmail(value);
+            }}
+            required
+          />
+          <input className={styles.submitBtn} type="submit" value="subscribe" />
+        </form>
+        <p>I won’t send you spam. Unsubscribe at any time.</p>
+      </div>
     </div>
   )
 }

@@ -46,12 +46,13 @@ export default function Layout({ children, home }) {
           <!-- Global site tag (gtag.js) - Google Analytics -->
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ2KJXR4P6"></script>
           <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-        
-            gtag('config', 'G-XZ2KJXR4P6');
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+          
+          gtag('config', 'G-XZ2KJXR4P6');
           </script>` }} />
+        <script data-ad-client="ca-pub-7839879913941805" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       </Head>
       <header className={styles.header}>
         {home ? (

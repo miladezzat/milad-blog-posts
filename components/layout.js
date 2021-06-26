@@ -53,6 +53,7 @@ export default function Layout({ children, home }) {
           gtag('config', 'G-XZ2KJXR4P6');
           </script>` }} />
         <script data-ad-client="ca-pub-7839879913941805" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
       </Head>
       <header className={styles.header}>
         {home ? (
@@ -97,6 +98,13 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+      <div dangerouslySetInnerHTML={{
+        __html: `<amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-7839879913941805">
+        </amp-auto-ads>`
+      }}>
+
+      </div>
       <div className={styles.footer}>
         <h1>Subscribe to the Newsletter</h1>
         <p>Subscribe to get my latest content by email.</p>

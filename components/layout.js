@@ -33,11 +33,11 @@ export default function Layout({ children, home }) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="google-site-verification" content="_-p2XdKwtGd6MPXJye2VTAIfwoQtDxLoelu7ojSoNqM" />
-        <meta name="description" content="Milad Ezzat, A Software Engineer with industry experience building web services. Specializing in Full Stack development with Node.js, Reactjs." />
-        <meta name="keywords" content="HTML, CSS, JavaScript, node.js, developer, software engineer" />
+        <meta name="description" content="Milad E. Fahmy, A Software Engineer with industry experience building web services. Specializing in Full Stack development with Node.js, Reactjs." />
+        <meta name="keywords" content="HTML, CSS, JavaScript, node.js, node, mongo, mongodb, developer, Software Engineer" />
         <meta name="author" content="Milad E. Fahmy" />
-        <meta property="og:description" content="Milad Ezzat, A Software Engineer with industry experience building web services. Specializing in Full Stack development with Node.js, Reactjs." />
-        <meta name="twitter:description" content="Milad Ezzat, A Software Engineer with industry experience building web services. Specializing in Full Stack development with Node.js, Reactjs." />
+        <meta property="og:description" content="Milad E. Fahmy, A Software Engineer with industry experience building web services. Specializing in Full Stack development with Node.js, Reactjs." />
+        <meta name="twitter:description" content="Milad E. Fahmy, A Software Engineer with industry experience building web services. Specializing in Full Stack development with Node.js, Reactjs." />
         <meta property="og:image" content="/images/profile.png" />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="/images/profile.png" />

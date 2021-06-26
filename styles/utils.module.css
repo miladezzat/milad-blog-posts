@@ -51,10 +51,11 @@
     color: #666;
   }
   .tag{
-    background-color: yellow;
+    background-color: darkslategray;
     font-size: 0.7rem;
     display: inline-block;
     width: fit-content;
+    padding: 3px;
   }
   .post{
     word-wrap: break-word;

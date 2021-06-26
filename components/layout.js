@@ -41,6 +41,7 @@ export default function Layout({ children, home }) {
         <meta property="og:image" content="/images/profile.png" />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="/images/profile.png" />
+        <script data-ad-client="ca-pub-7839879913941805" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <div dangerouslySetInnerHTML={{
           __html: `
           <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -105,7 +106,7 @@ export default function Layout({ children, home }) {
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
          ` }} />
-         
+
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">

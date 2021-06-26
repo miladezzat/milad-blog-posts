@@ -91,6 +91,21 @@ export default function Layout({ children, home }) {
         )}
       </header>
       <main>{children}</main>
+      <div dangerouslySetInnerHTML={{
+        __html: `
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- first-section -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-7839879913941805"
+            data-ad-slot="5257981098"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+         ` }} />
+         
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">

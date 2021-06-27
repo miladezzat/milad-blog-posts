@@ -141,11 +141,9 @@ export default function Layout({ children, home }) {
         {message && (<p>{message}</p>)}
         <p>I won’t send you spam. Unsubscribe at any time.</p>
       </div>
-      <div>
-        <amp-auto-ads type="adsense"
-          data-ad-client="ca-pub-7839879913941805">
-        </amp-auto-ads>
-      </div>
+      <amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-7839879913941805">
+      </amp-auto-ads>
     </div>
   )
 }

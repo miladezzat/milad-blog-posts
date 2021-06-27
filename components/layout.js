@@ -42,10 +42,10 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="/images/profile.png" />
         <script data-ad-client="ca-pub-7839879913941805" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ2KJXR4P6"></script>
         <div dangerouslySetInnerHTML={{
           __html: `
           <!-- Global site tag (gtag.js) - Google Analytics -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ2KJXR4P6"></script>
           <script>
           window.dataLayer = window.dataLayer || [];
           function gtag() { dataLayer.push(arguments); }
@@ -118,9 +118,7 @@ export default function Layout({ children, home }) {
         __html: `<amp-auto-ads type="adsense"
         data-ad-client="ca-pub-7839879913941805">
         </amp-auto-ads>`
-      }}>
-
-      </div>
+      }}/>      
       <div className={styles.footer}>
         <h1>Subscribe to the Newsletter</h1>
         <p>Subscribe to get my latest content by email.</p>

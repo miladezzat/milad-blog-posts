@@ -1,5 +1,4 @@
 ---
-favorited: true
 tags: [javascript]
 title: Callback Functions In JavaScript
 created: '2021-06-28T15:06:47.314Z'

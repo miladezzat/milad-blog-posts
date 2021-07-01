@@ -29,22 +29,23 @@ export default function Layout({ children, home }) {
     setMessage(data.message);
   }
   return (
-    <div className={styles.container}>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="google-site-verification" content="_-p2XdKwtGd6MPXJye2VTAIfwoQtDxLoelu7ojSoNqM" />
-        <meta name="description" content="Milad E. Fahmy, A Software Engineer with industry experience building web services. Specializing in Full Stack development with Node.js, Reactjs." />
-        <meta name="keywords" content="HTML, CSS, JavaScript, node.js, node, mongo, mongodb, developer, Software Engineer" />
-        <meta name="author" content="Milad E. Fahmy" />
-        <meta property="og:description" content="Milad E. Fahmy, A Software Engineer with industry experience building web services. Specializing in Full Stack development with Node.js, Reactjs." />
-        <meta name="twitter:description" content="Milad E. Fahmy, A Software Engineer with industry experience building web services. Specializing in Full Stack development with Node.js, Reactjs." />
-        <meta property="og:image" content="/images/profile.png" />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="/images/profile.png" />
-        <script data-ad-client="ca-pub-7839879913941805" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ2KJXR4P6"></script>
-        <div dangerouslySetInnerHTML={{
-          __html: `
+    <html lang="en">
+      <div className={styles.container}>
+        <Head>
+          <link rel="icon" href="/favicon.ico" />
+          <meta name="google-site-verification" content="_-p2XdKwtGd6MPXJye2VTAIfwoQtDxLoelu7ojSoNqM" />
+          <meta name="description" content="Milad E. Fahmy, A Software Engineer with industry experience building web services. Specializing in Full Stack development with Node.js, Reactjs." />
+          <meta name="keywords" content="HTML, CSS, JavaScript, node.js, node, mongo, mongodb, developer, Software Engineer" />
+          <meta name="author" content="Milad E. Fahmy" />
+          <meta property="og:description" content="Milad E. Fahmy, A Software Engineer with industry experience building web services. Specializing in Full Stack development with Node.js, Reactjs." />
+          <meta name="twitter:description" content="Milad E. Fahmy, A Software Engineer with industry experience building web services. Specializing in Full Stack development with Node.js, Reactjs." />
+          <meta property="og:image" content="/images/profile.png" />
+          <meta name="og:title" content={siteTitle} />
+          <meta name="twitter:card" content="/images/profile.png" />
+          <script data-ad-client="ca-pub-7839879913941805" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ2KJXR4P6"></script>
+          <div dangerouslySetInnerHTML={{
+            __html: `
           <!-- Global site tag (gtag.js) - Google Analytics -->
           <script>
           window.dataLayer = window.dataLayer || [];
@@ -53,47 +54,47 @@ export default function Layout({ children, home }) {
           
           gtag('config', 'G-XZ2KJXR4P6');
           </script>` }} />
-        <script data-ad-client="ca-pub-7839879913941805" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
-      </Head>
-      <header className={styles.header}>
-        {home ? (
-          <>
-            <Image
-              priority
-              src="/images/profile.png"
-              className={utilStyles.borderCircle}
-              height={200}
-              width={200}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <Image
-                  priority
-                  src="/images/profile.png"
-                  className={utilStyles.borderCircle}
-                  height={144}
-                  width={144}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
+          <script data-ad-client="ca-pub-7839879913941805" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+        </Head>
+        <header className={styles.header}>
+          {home ? (
+            <>
+              <Image
+                priority
+                src="/images/profile.png"
+                className={utilStyles.borderCircle}
+                height={200}
+                width={200}
+                alt={name}
+              />
+              <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            </>
+          ) : (
+            <>
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a>
+                  <Image
+                    priority
+                    src="/images/profile.png"
+                    className={utilStyles.borderCircle}
+                    height={144}
+                    width={144}
+                    alt={name}
+                  />
+                </a>
               </Link>
-            </h2>
-          </>
-        )}
-      </header>
-      <main>{children}</main>
-      <div dangerouslySetInnerHTML={{
-        __html: `
+              <h2 className={utilStyles.headingLg}>
+                <Link href="/">
+                  <a className={utilStyles.colorInherit}>{name}</a>
+                </Link>
+              </h2>
+            </>
+          )}
+        </header>
+        <main>{children}</main>
+        <div dangerouslySetInnerHTML={{
+          __html: `
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- first-section -->
         <ins class="adsbygoogle"
@@ -107,41 +108,42 @@ export default function Layout({ children, home }) {
         </script>
          ` }} />
 
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
-      <div dangerouslySetInnerHTML={{
-        __html: `<amp-auto-ads type="adsense"
+        {!home && (
+          <div className={styles.backToHome}>
+            <Link href="/">
+              <a>← Back to home</a>
+            </Link>
+          </div>
+        )}
+        <div dangerouslySetInnerHTML={{
+          __html: `<amp-auto-ads type="adsense"
         data-ad-client="ca-pub-7839879913941805">
         </amp-auto-ads>`
-      }}/>      
-      <div className={styles.footer}>
-        <h1>Subscribe to the Newsletter</h1>
-        <p>Subscribe to get my latest content by email.</p>
-        <form onSubmit={handleSubmit}>
-          <input
-            className={styles.emailInput}
-            type="email"
-            placeholder="enter your email"
-            value={email}
-            onChange={async (e) => {
-              const { value } = e.currentTarget;
-              setEmail(value);
-            }}
-            required
-          />
-          <input className={styles.submitBtn} type="submit" value="subscribe" />
-        </form>
-        {message && (<p>{message}</p>)}
-        <p>I won’t send you spam. Unsubscribe at any time.</p>
+        }} />
+        <div className={styles.footer}>
+          <h1>Subscribe to the Newsletter</h1>
+          <p>Subscribe to get my latest content by email.</p>
+          <form onSubmit={handleSubmit}>
+            <input
+              className={styles.emailInput}
+              type="email"
+              placeholder="enter your email"
+              value={email}
+              onChange={async (e) => {
+                const { value } = e.currentTarget;
+                setEmail(value);
+              }}
+              required
+            />
+            <input className={styles.submitBtn} type="submit" value="subscribe" />
+          </form>
+          {message && (<p>{message}</p>)}
+          <p>I won’t send you spam. Unsubscribe at any time.</p>
+        </div>
+        <amp-auto-ads type="adsense"
+          data-ad-client="ca-pub-7839879913941805">
+        </amp-auto-ads>
       </div>
-      <amp-auto-ads type="adsense"
-        data-ad-client="ca-pub-7839879913941805">
-      </amp-auto-ads>
-    </div>
+    </html>
   )
 }

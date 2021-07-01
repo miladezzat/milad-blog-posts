@@ -23,7 +23,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hello, I'm Milad. I'm Software Engineer and Photographer. You can connect me on <a href='https://www.linkedin.com/in/miladezzat' target='_blank' rel="noopener"> LinkedIn </a> I share what I learned about Software Engineering, Productivity, and building new habits on my <a  href='https://www.youtube.com/channel/UCewDJdWsup1lIgiV8v7dNnQ' target='_blank' rel="noopener"> Youtube channel </a> and blog. Feel free to join my newsletter to follow along.
+        <p>Hello, I'm Milad. I'm Software Engineer and Photographer. You can connect me on <a href='https://www.linkedin.com/in/miladezzat' target='_blank' rel="noopener"> LinkedIn </a>, and you can find me on <a href="https://milad-ezzat.netlify.app/">website</a>. I share what I learned about Software Engineering, Productivity, and building new habits on my <a  href='https://www.youtube.com/channel/UCewDJdWsup1lIgiV8v7dNnQ' target='_blank' rel="noopener"> Youtube channel </a> and blog. Feel free to join my newsletter to follow along.
         </p>
       </section>
 

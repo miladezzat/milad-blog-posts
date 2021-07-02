@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start"
   },
   "dependencies": {
@@ -12,6 +13,7 @@
     "gray-matter": "^4.0.3",
     "mongoose": "^5.12.14",
     "next": "^10.0.0",
+    "next-sitemap": "^1.6.124",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
     "react": "17.0.1",

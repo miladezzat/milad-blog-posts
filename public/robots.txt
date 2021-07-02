@@ -1,9 +1,3 @@
 # *
 User-agent: *
 Allow: /
-
-# Host
-Host: https://milad-ezzat.vercel.app
-
-# Sitemaps
-Sitemap: https://milad-ezzat.vercel.app/sitemap.xml

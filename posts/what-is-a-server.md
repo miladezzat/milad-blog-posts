@@ -1,6 +1,6 @@
 ---
 tags: [network]
-title: Server
+title: What is a server
 created: '2021-07-02T12:37:15.422Z'
 modified: '2021-07-02T12:46:36.336Z'
 ---
@@ -9,8 +9,7 @@ modified: '2021-07-02T12:46:36.336Z'
 
 > In computing, a server is a piece of computer hardware or software that provides functionality for other programs or devices, called "clients". This architecture is called the client–server model. [Wikipedia](https://en.wikipedia.org/wiki/Server_(computing))
 
-
-![server-1.png](images/server-1.png)
+![server-1.png](/images/server-1.png)
 
 > A server is a computer or system that provides resources, data, services, or programs to other computers, known as clients, over a network. In theory, whenever computers share resources with client machines they are considered servers. ... This means that a device could be both a server and a client at the same time.
 

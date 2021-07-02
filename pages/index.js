@@ -18,29 +18,31 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
   return (
-    <Layout home>
+    <>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>Hello, I'm Milad. I'm Software Engineer and Photographer. You can connect me on <a href='https://www.linkedin.com/in/miladezzat' target='_blank' rel="noopener"> LinkedIn </a>, and you can find me on <a href="https://milad-ezzat.netlify.app/">website</a>. I share what I learned about Software Engineering, Productivity, and building new habits on my <a  href='https://www.youtube.com/channel/UCewDJdWsup1lIgiV8v7dNnQ' target='_blank' rel="noopener"> Youtube channel </a> and blog. Feel free to join my newsletter to follow along.
-        </p>
-      </section>
+      <Layout home>
+        <section className={utilStyles.headingMd}>
+          <p>Hello, I'm Milad. I'm Software Engineer and Photographer. You can connect me on <a href='https://www.linkedin.com/in/miladezzat' target='_blank' rel="noopener"> LinkedIn </a>, and you can find me on <a href="https://milad-ezzat.netlify.app/">website</a>. I share what I learned about Software Engineering, Productivity, and building new habits on my <a href='https://www.youtube.com/channel/UCewDJdWsup1lIgiV8v7dNnQ' target='_blank' rel="noopener"> Youtube channel </a> and blog. Feel free to join my newsletter to follow along.
+          </p>
+        </section>
 
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, created, title, tags, readingTime }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={"/posts/" + id} key={id}>{title}</Link>              
-              <Date dateString={created} readingTime={readingTime} />
-              {tags?.map(tag => (
-                <span key={`${tag}-${id}`}><span className={utilStyles.tag} key={tag}>#{tag} </span>&nbsp;</span>
-              ))}
-            </li>
-          ))}
-        </ul>
-      </section>
-    </Layout>
+        <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+          <h2 className={utilStyles.headingLg}>Blog</h2>
+          <ul className={utilStyles.list}>
+            {allPostsData.map(({ id, created, title, tags, readingTime }) => (
+              <li className={utilStyles.listItem} key={id}>
+                <Link href={"/posts/" + id} key={id}>{title}</Link>
+                <Date dateString={created} readingTime={readingTime} />
+                {tags?.map(tag => (
+                  <span key={`${tag}-${id}`}><span className={utilStyles.tag} key={tag}>#{tag} </span>&nbsp;</span>
+                ))}
+              </li>
+            ))}
+          </ul>
+        </section>
+      </Layout>
+    </>
   )
 }

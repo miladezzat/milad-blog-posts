@@ -28,6 +28,7 @@ export default function Layout({ children, home }) {
     const data = await response.json();
     setMessage(data.message);
   }
+  
   return (
     <div className={styles.container}>
       <Head>
@@ -92,7 +93,8 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
-      <main>{children}</main>
+
+      {children}
 
       {!home && (
         <div className={styles.backToHome}>
@@ -101,6 +103,7 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+      
       <div className={styles.footer}>
         <h1>Subscribe to the Newsletter</h1>
         <p>Subscribe to get my latest content by email.</p>

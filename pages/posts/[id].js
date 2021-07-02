@@ -23,17 +23,18 @@ export async function getStaticProps({ params }) {
 
 export default function Post({ postData }) {
     return (
-        <Layout>
+        <>
             <Head>
                 <title>{postData.title}</title>
             </Head>
-            <article className={utilStyles.post}>
-                <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-                <div className={utilStyles.lightText}>
-                    <Date dateString={postData.created} readingTime={postData.readingTime} />
-                </div>
-                <div dangerouslySetInnerHTML={{
-                    __html: `
+            <Layout>
+                <article className={utilStyles.post}>
+                    <h1 className={utilStyles.headingXl}>{postData.title}</h1>
+                    <div className={utilStyles.lightText}>
+                        <Date dateString={postData.created} readingTime={postData.readingTime} />
+                    </div>
+                    <div dangerouslySetInnerHTML={{
+                        __html: `
                     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                     <!-- articles -->
                     <ins class="adsbygoogle"
@@ -46,8 +47,9 @@ export default function Post({ postData }) {
                         (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
                 ` }} />
-                <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-            </article>
-        </Layout>
+                    <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+                </article>
+            </Layout>
+        </>
     )
 }

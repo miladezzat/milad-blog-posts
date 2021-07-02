@@ -2,7 +2,7 @@
 tags: [network]
 title: What is proxy server ?
 created: '2021-07-02T12:49:47.801Z'
-modified: '2021-07-02T13:23:33.511Z'
+modified: '2021-07-02T13:48:09.529Z'
 ---
 
 # What is proxy server ?
@@ -12,7 +12,7 @@ modified: '2021-07-02T13:23:33.511Z'
 > In computer networking, a proxy server is a server application or appliance that acts as an intermediary for requests from clients seeking resources from servers that provide those resources. [Wikipedia](https://en.wikipedia.org/wiki/Proxy_server)
 
 
-Every computer that is connected to the network has an [IP](ip) (Internet Protocol) address that identifies the device uniquely. Similarly, the proxy server is a computer on the network that has its own IP address. But sometimes, we want to access those websites or servers that are restricted and we do not want to show our identity (IP address). In such a scenario, the proxy server comes into existence. We can achieve the same by using the proxy server. It provides varying levels of functionality, security, and privacy that depend on the use case, needs, or policies of the company. In this section, we will discuss what is a proxy server, its types, advantages, need, and working of proxy servers.
+Every computer that is connected to the network has an [IP](https://milad-ezzat.vercel.app/posts/what-is-ip-address) (Internet Protocol) address that identifies the device uniquely. Similarly, the proxy server is a computer on the network that has its own IP address. But sometimes, we want to access those websites or servers that are restricted and we do not want to show our identity (IP address). In such a scenario, the proxy server comes into existence. We can achieve the same by using the proxy server. It provides varying levels of functionality, security, and privacy that depend on the use case, needs, or policies of the company. In this section, we will discuss what is a proxy server, its types, advantages, need, and working of proxy servers.
 
 
 ## Proxy Server

@@ -3,26 +3,61 @@ import NavBar from '../components/nav-bar/nav-bar';
 import Footer from '../components/footer';
 import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Fragment } from 'react';
 import Date from '../components/date';
 import utilStyles from '../styles/utils.module.css';
+import { useRouter } from 'next/router';
 
-function paginate(array, pageSize = 4, pageNumber = 1) {
+const pageSize = 4;
+
+function paginate(array, pageSize, pageNumber = 1) {
     return array.slice((pageNumber - 1) * pageSize, pageNumber * pageSize);
 }
 
+
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData();
+
     return {
         props: {
-            allPostsData: paginate(allPostsData),
+            allPostsData: allPostsData,
         }
     }
 }
 
 export default function Home({ allPostsData }) {
     const [pageNumber, setPageNumber] = useState(1);
+    const [allposts, setPosts] = useState(paginate(allPostsData, pageSize, pageNumber));
+    const router = useRouter();
+    const { page } = router.query;
+
+    useEffect(() => {
+        if (page) {
+            setPageNumber(+page);
+            setPosts(paginate(allPostsData, pageSize, +page));
+        }
+    }, [page]);
+
+    const handleNextPosts = () => {
+        if (pageNumber * pageSize < allPostsData.length) {
+            router.query.page = pageNumber + 1
+            router.push(router);
+
+            setPosts(paginate(allPostsData, pageSize, pageNumber + 1));
+            setPageNumber(pageNumber + 1);
+        }
+    }
+
+    const handlePrevPosts = () => {
+        if (pageNumber * pageSize > 0) {
+            router.query.page = pageNumber - 1;
+            router.push(router);
+
+            setPosts(paginate(allPostsData, pageSize, pageNumber - 1));
+            setPageNumber(pageNumber - 1);
+        }
+    }
 
     return (
         <Layout>
@@ -49,7 +84,7 @@ export default function Home({ allPostsData }) {
                 <div className="row gx-4 gx-lg-5 justify-content-center">
                     <div className="col-md-10 col-lg-8 col-xl-7">
                         {
-                            allPostsData.map(({ id, created, title, subTitle, tags, readingTime, author }, index) => {
+                            allposts.map(({ id, created, title, subTitle, tags, readingTime, author }, index) => {
                                 return (<Fragment key={id + index}>
                                     {/* <!-- Post preview--> */}
                                     <div className="post-preview" key={id}>
@@ -77,12 +112,16 @@ export default function Home({ allPostsData }) {
                             {/* <!-- Pager--> */}
                             {
                                 pageNumber > 1 &&
-                                <div className=" d-flex justify-content-start w-50"><a className="btn btn-primary text-uppercase" href="#!">←Latest Posts</a></div>
+                                <div className=" d-flex justify-content-start w-50">
+                                    <button className="btn btn-primary text-uppercase" onClick={handlePrevPosts}>←Latest Posts</button>
+                                </div>
                             }
 
 
                             {/* <!-- Pager--> */}
-                            <div className="d-flex justify-content-end w-50"><a className="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
+                            <div className="d-flex justify-content-end w-50">
+                                <button className="btn btn-primary text-uppercase" onClick={handleNextPosts}>Older Posts →</button>
+                            </div>
                         </div>
 
                     </div>

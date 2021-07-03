@@ -1,10 +1,8 @@
 ---
-tags: [TypeScript, Programming]
+tags: [TypeScript]
 title: Array Type Inference
-subTitle: In computer science, array programming refers to solutions which allow the application of operations to an entire set of values at once
 created: '2021-06-13T19:57:55.855Z'
 modified: '2021-06-13T20:02:28.049Z'
-author: 'Milad E. Fahmy'
 ---
 
 # Array Type Inference

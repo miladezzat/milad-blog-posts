@@ -1,48 +1,92 @@
-import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
-import utilStyles from '../styles/utils.module.css';
-import Link from 'next/link';
-import { getSortedPostsData } from '../lib/posts';
-import Date from '../components/date';
+import Head from 'next/head'
+import NavBar from '../components/nav-bar/nav-bar';
+import Footer from '../components/footer';
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData
-    }
-  }
-}
-
-
-
-export default function Home({ allPostsData }) {
+export default function Home() {
   return (
-    <>
+    <>    
       <Head>
-        <title>{siteTitle}</title>
+        <title>Milad E. Fahmy</title>
       </Head>
-      <Layout home>
-        <section className={utilStyles.headingMd}>
-          <p>Hello, I'm Milad. I'm Software Engineer and Photographer. You can connect me on <a href='https://www.linkedin.com/in/miladezzat' target='_blank' rel="noopener"> LinkedIn </a>, and you can find me on <a href="https://milad-ezzat.netlify.app/">website</a>. I share what I learned about Software Engineering, Productivity, and building new habits on my <a href='https://www.youtube.com/channel/UCewDJdWsup1lIgiV8v7dNnQ' target='_blank' rel="noopener"> Youtube channel </a> and blog. Feel free to join my newsletter to follow along.
-          </p>
-        </section>
+      <NavBar/>
+      {/* <!-- Page Header--> */}
+      <header className="masthead" style={{backgroundImage: "url('/images/home-bg.jpg')"}}>
+            <div className="container position-relative px-4 px-lg-5">
+                <div className="row gx-4 gx-lg-5 justify-content-center">
+                    <div className="col-md-10 col-lg-8 col-xl-7">
+                        <div className="site-heading">
+                            <h1>Clean Blog</h1>
+                            <span className="subheading">A Blog Theme by Start Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-        <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-          <h2 className={utilStyles.headingLg}>Blog</h2>
-          <ul className={utilStyles.list}>
-            {allPostsData.map(({ id, created, title, tags, readingTime }) => (
-              <li className={utilStyles.listItem} key={id}>
-                <Link href={"/posts/" + id} key={id}>{title}</Link>
-                <Date dateString={created} readingTime={readingTime} />
-                {tags?.map(tag => (
-                  <span key={`${tag}-${id}`}><span className={utilStyles.tag} key={tag}>#{tag} </span>&nbsp;</span>
-                ))}
-              </li>
-            ))}
-          </ul>
-        </section>
-      </Layout>
+      {/* <!-- Main Content--> */}
+        <div className="container px-4 px-lg-5">
+            <div className="row gx-4 gx-lg-5 justify-content-center">
+                <div className="col-md-10 col-lg-8 col-xl-7">
+                    {/* <!-- Post preview--> */}
+                    <div className="post-preview">
+                        <a href="post.html">
+                            <h2 className="post-title">Man must explore, and this is exploration at its greatest</h2>
+                            <h3 className="post-subtitle">Problems look mighty small from 150 miles up</h3>
+                        </a>
+                        <p className="post-meta">
+                            Posted by
+                            <a href="#!">Start Bootstrap</a>
+                            on September 24, 2021
+                        </p>
+                    </div>
+                    {/* <!-- Divider--> */}
+                    <hr className="my-4" />
+                    {/* <!-- Post preview--> */}
+                    <div className="post-preview">
+                        <a href="post.html"><h2 className="post-title">I believe every human has a finite number of heartbeats. I do not intend to waste any of mine.</h2></a>
+                        <p className="post-meta">
+                            Posted by
+                            <a href="#!">Start Bootstrap</a>
+                            on September 18, 2021
+                        </p>
+                    </div>
+                    {/* <!-- Divider--> */}
+                    <hr className="my-4" />
+                    {/* <!-- Post preview--> */}
+                    <div className="post-preview">
+                        <a href="post.html">
+                            <h2 className="post-title">Science has not yet mastered prophecy</h2>
+                            <h3 className="post-subtitle">We predict too much for the next year and yet far too little for the next ten.</h3>
+                        </a>
+                        <p className="post-meta">
+                            Posted by
+                            <a href="#!">Start Bootstrap</a>
+                            on August 24, 2021
+                        </p>
+                    </div>
+                    {/* <!-- Divider--> */}
+                    <hr className="my-4" />
+                    {/* <!-- Post preview--> */}
+                    <div className="post-preview">
+                        <a href="post.html">
+                            <h2 className="post-title">Failure is not an option</h2>
+                            <h3 className="post-subtitle">Many say exploration is part of our destiny, but it’s actually our duty to future generations.</h3>
+                        </a>
+                        <p className="post-meta">
+                            Posted by
+                            <a href="#!">Start Bootstrap</a>
+                            on July 8, 2021
+                        </p>
+                    </div>
+                    {/* <!-- Divider--> */}
+                    <hr className="my-4" />
+                    {/* <!-- Pager--> */}
+                    <div className="d-flex justify-content-end mb-4"><a className="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
+                </div>
+            </div>
+        </div>
+
+      <Footer/>
     </>
   )
 }

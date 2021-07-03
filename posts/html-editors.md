@@ -1,5 +1,6 @@
 ---
 tags: [html]
+author: Milad E. Fahmy
 title: HTML Editors
 created: '2021-06-20T14:55:03.941Z'
 modified: '2021-06-20T14:55:03.941Z'

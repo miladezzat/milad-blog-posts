@@ -1,5 +1,6 @@
 ---
 tags: [TypeScript]
+author: Milad E. Fahmy
 title: Summations the multiple numbers
 created: '2021-06-13T20:31:41.680Z'
 modified: '2021-07-01T11:58:43.613Z'

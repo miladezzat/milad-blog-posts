@@ -1,6 +1,7 @@
 ---
 tags: [TypeScript]
-title: Generic Types
+author: Milad E. Fahmy
+title: Generic Types in TypeScript
 created: '2021-06-17T20:41:58.662Z'
 modified: '2021-06-17T20:46:06.841Z'
 ---

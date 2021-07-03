@@ -1,5 +1,6 @@
 ---
 tags: [npm]
+author: Milad E. Fahmy
 title: Generate TOTP
 created: '2021-06-12T17:16:26.012Z'
 modified: '2021-06-12T17:42:13.724Z'

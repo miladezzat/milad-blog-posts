@@ -1,5 +1,6 @@
 ---
 tags: [Heroku]
+author: Milad E. Fahmy
 title: Heroku - How to see all the logs
 created: '2021-06-30T15:14:59.225Z'
 modified: '2021-06-30T15:19:06.291Z'

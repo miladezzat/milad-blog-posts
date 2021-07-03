@@ -1,5 +1,6 @@
 ---
 tags: [javascript]
+author: Milad E. Fahmy
 title: Callback Functions In JavaScript
 created: '2021-06-28T15:06:47.314Z'
 modified: '2021-06-28T15:13:26.043Z'

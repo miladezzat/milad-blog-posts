@@ -1,6 +1,7 @@
 ---
 tags: [TypeScript]
-title: Functions
+author: Milad E. Fahmy
+title: Functions in TypeScript
 created: '2021-06-11T09:52:02.396Z'
 modified: '2021-06-11T11:35:34.099Z'
 ---

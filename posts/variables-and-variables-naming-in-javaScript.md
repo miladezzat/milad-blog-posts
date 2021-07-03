@@ -1,4 +1,5 @@
 ---
+author: Milad E. Fahmy
 tags: [javascript]
 title: Variables & Variables Naming In JavaScript
 created: '2021-06-28T13:44:40.333Z'

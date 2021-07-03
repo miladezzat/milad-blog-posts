@@ -1,5 +1,6 @@
 ---
 tags: [TypeScript]
+author: Milad E. Fahmy
 title: Arrays
 created: '2021-06-11T11:55:28.232Z'
 modified: '2021-06-11T12:24:12.294Z'

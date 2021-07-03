@@ -1,5 +1,6 @@
 ---
 tags: [MongoDB]
+author: Milad E. Fahmy
 title: How To Install MongoDB in Fedora 34/33
 created: '2021-06-30T14:29:16.517Z'
 modified: '2021-06-30T14:40:32.338Z'

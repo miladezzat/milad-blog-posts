@@ -1,5 +1,6 @@
 ---
 tags: [javascript, linux, TypeScript, ubuntu]
+author: Milad E. Fahmy
 title: How to install typescript on Ubuntu
 created: '2021-06-29T08:00:34.085Z'
 modified: '2021-06-29T08:04:47.289Z'

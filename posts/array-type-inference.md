@@ -1,5 +1,6 @@
 ---
 tags: [TypeScript]
+author: Milad E. Fahmy
 title: Array Type Inference
 created: '2021-06-13T19:57:55.855Z'
 modified: '2021-06-13T20:02:28.049Z'

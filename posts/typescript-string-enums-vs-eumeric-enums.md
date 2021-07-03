@@ -1,6 +1,7 @@
 ---
 tags: [TypeScript]
-title: String Enums vs. Numeric Enums
+author: Milad E. Fahmy
+title: String Enums vs. Numeric Enums in TypeScript
 created: '2021-06-17T18:34:43.008Z'
 modified: '2021-06-17T18:40:47.640Z'
 ---

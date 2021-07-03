@@ -1,5 +1,6 @@
 ---
 tags: [TypeScript]
+author: Milad E. Fahmy
 title: Spread Syntax
 created: '2021-06-13T20:08:31.898Z'
 modified: '2021-06-13T20:16:19.399Z'

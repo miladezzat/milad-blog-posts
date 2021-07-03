@@ -1,5 +1,6 @@
 ---
 tags: [npm]
+author: Milad E. Fahmy
 title: Error Handler E2
 created: '2021-06-27T13:00:22.267Z'
 modified: '2021-06-27T13:01:17.902Z'

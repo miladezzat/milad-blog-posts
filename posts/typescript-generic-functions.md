@@ -1,6 +1,6 @@
 ---
 tags: [TypeScript]
-title: Generic Functions
+title: Generic Functions in TypeScript
 created: '2021-06-17T20:55:44.444Z'
 modified: '2021-06-17T20:56:32.002Z'
 ---

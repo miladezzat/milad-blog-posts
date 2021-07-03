@@ -1,4 +1,6 @@
 ---
+tags: [DevOps]
+author: Milad E. Fahmy
 title: Docker
 created: '2021-06-26T19:19:50.096Z'
 modified: '2021-06-26T20:25:04.563Z'

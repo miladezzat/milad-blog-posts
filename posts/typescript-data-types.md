@@ -1,5 +1,6 @@
 ---
 tags: [TypeScript]
+author: Milad E. Fahmy
 title: Type Inferences
 created: '2021-06-10T09:32:56.283Z'
 modified: '2021-06-10T16:37:52.129Z'

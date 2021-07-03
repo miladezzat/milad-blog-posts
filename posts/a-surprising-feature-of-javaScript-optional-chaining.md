@@ -1,5 +1,6 @@
 ---
 tags: [javascript]
+author: Milad E. Fahmy
 title: A surprising feature of JavaScript optional chaining
 created: '2021-06-27T16:51:28.742Z'
 modified: '2021-06-27T16:58:40.514Z'

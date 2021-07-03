@@ -1,6 +1,7 @@
 ---
+author: Milad E. Fahmy
 tags: [TypeScript]
-title: Tuples
+title: Tuples in TypeScript
 created: '2021-06-13T18:37:01.616Z'
 modified: '2021-06-13T18:40:42.683Z'
 ---

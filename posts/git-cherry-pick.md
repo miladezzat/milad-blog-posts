@@ -1,5 +1,6 @@
 ---
 tags: [GIT]
+author: Milad E. Fahmy
 title: Cherry picking in Git
 created: '2021-06-29T11:04:06.732Z'
 modified: '2021-06-29T11:07:40.464Z'

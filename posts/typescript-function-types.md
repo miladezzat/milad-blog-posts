@@ -1,5 +1,6 @@
 ---
 tags: [TypeScript]
+author: Milad E. Fahmy
 title: Function Types
 created: '2021-06-17T19:53:58.375Z'
 modified: '2021-06-17T19:56:38.198Z'

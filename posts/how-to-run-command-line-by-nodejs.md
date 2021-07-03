@@ -1,5 +1,6 @@
 ---
 tags: [Nodejs]
+author: Milad E. Fahmy
 title: How to run command line by nodejs
 created: '2021-06-24T19:58:23.750Z'
 modified: '2021-06-24T20:02:37.981Z'

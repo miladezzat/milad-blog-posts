@@ -1,5 +1,6 @@
 ---
 tags: [TypeScript]
+author: Milad E. Fahmy
 title: TypeScript Enums
 created: '2021-06-17T18:16:18.743Z'
 modified: '2021-06-17T18:24:28.696Z'

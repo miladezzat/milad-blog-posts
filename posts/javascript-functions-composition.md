@@ -1,5 +1,6 @@
 ---
 tags: [javascript]
+author: Milad E. Fahmy
 title: JavaScript Functions Composition
 created: '2021-06-28T19:17:08.575Z'
 modified: '2021-06-28T19:24:15.047Z'

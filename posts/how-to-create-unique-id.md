@@ -1,5 +1,6 @@
 ---
 tags: [JavaScript]
+author: Milad E. Fahmy
 title: Create uuid (unique id)
 created: '2021-06-12T17:16:26.012Z'
 modified: '2021-06-12T17:27:32.045Z'

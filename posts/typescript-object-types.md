@@ -1,6 +1,7 @@
 ---
 tags: [TypeScript]
-title: Object Types
+author: Milad E. Fahmy
+title: Object Types in TypeScript
 created: '2021-06-17T18:56:40.384Z'
 modified: '2021-06-17T19:09:06.860Z'
 ---

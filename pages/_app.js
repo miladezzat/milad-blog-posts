@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import '../styles/globals.css';
+import '../styles/custom-global.css';
 import Script from 'next/script';
 
 export const siteTitle = 'Milad E. Fahmy'

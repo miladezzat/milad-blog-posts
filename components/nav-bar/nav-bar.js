@@ -1,11 +1,12 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function NavBar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div className="container px-4 px-lg-5">
                 <Link href="/">
-                    <a className="navbar-brand">Milad E. Fahmy</a>
+                    <a className="navbar-brand"> <Image src="/android-chrome-192x192.png" alt="milad" width="30" height="30" /> Milad E. Fahmy</a>
                 </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu

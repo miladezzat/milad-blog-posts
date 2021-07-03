@@ -1,4 +1,3 @@
-import '../styles/globals.css'
 import Head from 'next/head'
 
 export const siteTitle = 'Milad E. Fahmy'
@@ -7,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="google-site-verification" content="_-p2XdKwtGd6MPXJye2VTAIfwoQtDxLoelu7ojSoNqM" />

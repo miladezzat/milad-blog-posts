@@ -24,7 +24,7 @@ export default function NavBar() {
                                 <a className="nav-link px-lg-3 py-3 py-lg-4">About</a>
                             </Link></li>
                         <li className="nav-item">
-                            <Link href="/posts/post">
+                            <Link href="/posts/a-surprising-feature-of-javaScript-optional-chaining">
                                 <a className="nav-link px-lg-3 py-3 py-lg-4">Sample Post</a>
                             </Link>
                         </li>

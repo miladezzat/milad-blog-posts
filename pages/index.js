@@ -33,9 +33,12 @@ export default function Home({ allPostsData }) {
     const { page } = router.query;
 
     useEffect(() => {
-        if (page) {
+        if (page && page > 0) {
             setPageNumber(+page);
             setPosts(paginate(allPostsData, pageSize, +page));
+        } else {
+            setPageNumber(1);
+            setPosts(paginate(allPostsData, pageSize, 1));
         }
     }, [page]);
 

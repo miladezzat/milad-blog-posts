@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import '../styles/globals.css';
+import Script from 'next/script';
+
 export const siteTitle = 'Milad E. Fahmy'
 
 function MyApp({ Component, pageProps }) {
@@ -22,17 +24,17 @@ function MyApp({ Component, pageProps }) {
         <meta name="twitter:card" content="/images/profile.png" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ2KJXR4P6"></script>
         {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-        <script src="/scripts/google-analytics.js"></script>                
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossOrigin="anonymous"></script>
+        
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
       </Head>
       <Component {...pageProps} />
 
       {/* <!-- Bootstrap core JS--> */}
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+      <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></Script>
       {/* <!-- Core theme JS--> */}
-      <script src='/scripts/scripts.js'></script>
+      <Script src='/scripts/scripts.js'></Script>      
     </>
   )
 }

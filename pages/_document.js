@@ -34,12 +34,16 @@ class MyDocument extends Document {
 
                     {/* google analytics */}
                     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ2KJXR4P6"></script>
-                    <script
-                        dangerouslySetInnerHTML={{
-                            __html: `
-                            `
-                        }}
-                    ></script>
+                    <script dangerouslySetInnerHTML={{
+                        __html: `
+                                <script>
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag() { dataLayer.push(arguments); }
+                                gtag('js', new Date());
+                                
+                                gtag('config', 'G-XZ2KJXR4P6');
+                                </script>` }}
+                    />
                 </Head>
                 <body>
                     <Main />

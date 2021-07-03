@@ -2,6 +2,24 @@ import Head from 'next/head'
 import NavBar from '../components/nav-bar/nav-bar';
 import Footer from '../components/footer';
 import Layout from '../components/layout';
+import { getSortedPostsData } from '../lib/posts';
+
+function paginate(array, page_size = 4, page_number = 1) {
+    return array.slice((page_number - 1) * page_size, page_number * page_size);
+}
+
+export async function getStaticProps() {
+    const allPostsData = getSortedPostsData();
+
+    console.log(paginate(allPostsData));
+    return {
+        props: {
+            allPostsData
+        }
+    }
+}
+
+
 export default function Home() {
     return (
         <Layout>

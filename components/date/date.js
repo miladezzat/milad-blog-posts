@@ -4,7 +4,7 @@ import styles from './date.module.css';
 export default function Date({ dateString, readingTime }) {
     const date = parseISO(dateString);
 
-    return <div dateTime={dateString} className={styles.timeReading}>
+    return <span dateTime={dateString} className={styles.timeReading}>
         {format(date, 'LLLL d, yyyy')} &#9716; {readingTime}
-    </div>
+    </span>
 }

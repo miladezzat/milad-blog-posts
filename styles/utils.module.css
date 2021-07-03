@@ -1,0 +1,7 @@
+.tag{
+    background-color: darkslategray;
+    font-size: 0.7rem;
+    display: inline-block;
+    width: fit-content;
+    padding: 3px;
+  }

@@ -8,7 +8,7 @@ modified: '2021-06-28T19:24:15.047Z'
 
 # JavaScript Functions Composition
 
-![JavaScript Functions Composition](/images/functions-composition.jpeg)
+<img src="/images/functions-composition.jpeg" alt="JavaScript Functions Composition" style="width:100%;"/>
 
 ## First: In mathematics
 function composition is an operation that takes two functions f and g and produces a function h such that h(x) = g(f(x)).
@@ -35,23 +35,22 @@ I want the words shorter than 5 characters to be upper cased.
 
 Good, we create three functions to execute those actions. One function takes the text and return words in lowercase. The second function looks for short words and upper-case them. Finally, the third recreates the text from the array received.
 
-![functions-composition-javascript](/images/functions-composition-javascript-1.png)
-
+<img src="/images/functions-composition-javascript-1.png" alt="functions-composition-javascript-1" style="width:100%" />
 
 Now, we create functions that do client need, but the client need use these functions to send the text and we make our functions work:
 
-![functions-composition-javascript-2.png](/images/functions-composition-javascript-2.png)
+<img src="/images/functions-composition-javascript-2.png" alt="functions-composition-javascript-2" style="width:100%" />
 
 Good, the prev code will work nice, but we have lot of manual use of functions, let us to combine auto without need send result of one to other:
 
-![functions-composition-javascript-3.png](/images/functions-composition-javascript-3.png)
+<img src="/images/functions-composition-javascript-3.png" alt="functions-composition-javascript-3" style="width:100%" />
 
 Cool, that’s nice, But: what if we had a function that took all the functions as inputs and just made composition happened by itself? We could call it compose. let’s go to create one function:
 
-![functions-composition-javascript-4.png](/images/functions-composition-javascript-4.png)
+<img src="/images/functions-composition-javascript-4.png" alt="functions-composition-javascript-4" style="width:100%" />
 
 Good, the prev code will work with three or four functions but, what if we had function can combine any number of functions as params:
 
 > Finally, the engineers come up with the compose function:
 
-![functions-composition-javascript-5.png](/images/functions-composition-javascript-5.png)
+<img src="/images/functions-composition-javascript-5.png" alt="functions-composition-javascript-5" style="width:100%" />

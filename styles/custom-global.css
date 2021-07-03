@@ -1,8 +1,5 @@
-img{
-    width: 100%;
-  }
-  pre {
-    padding: 5px;
-    background-color: #00404e;
-    color: #ffffff!important;
-  }
+pre {
+  padding: 5px;
+  background-color: #00404e;
+  color: #ffffff!important;
+}

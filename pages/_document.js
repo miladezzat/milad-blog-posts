@@ -10,8 +10,7 @@ class MyDocument extends Document {
         return (
             <Html lang="en">
                 <Head>
-                    <meta charSet="utf-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+                    <meta charSet="utf-8" />                   
                     <link rel="icon" href="/favicon.ico" />
                     <meta name="description" content="Milad E. Fahmy, A Software Engineer with industry experience building web services. Specializing in Full Stack development with Node.js, Reactjs." />
                     <meta name="keywords" content="HTML, CSS, JavaScript, node.js, node, mongo, mongodb, developer, Software Engineer" />

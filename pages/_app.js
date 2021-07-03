@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import '../styles/globals.css';
 export const siteTitle = 'Milad E. Fahmy'
 
 function MyApp({ Component, pageProps }) {

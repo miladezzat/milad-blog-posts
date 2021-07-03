@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import NavBar from '../components/nav-bar/nav-bar';
 import Footer from '../components/footer';
-
+import Layout from '../components/layout';
 export default function Home() {
   return (
-    <>    
+    <Layout>    
       <Head>
         <title>Milad E. Fahmy</title>
       </Head>
@@ -87,6 +87,6 @@ export default function Home() {
         </div>
 
       <Footer/>
-    </>
+    </Layout>
   )
 }

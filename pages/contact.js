@@ -1,10 +1,12 @@
 import Head from 'next/head'
 import NavBar from '../components/nav-bar/nav-bar';
 import Footer from '../components/footer';
+import Layout from '../components/layout';
+
 
 export default function Contact() {
     return (
-        <>
+        <Layout>
             <Head>
                 <title>Contact Me</title>
             </Head>
@@ -88,6 +90,6 @@ export default function Contact() {
             </main>
 
             <Footer />
-        </>
+        </Layout>
     )
 }

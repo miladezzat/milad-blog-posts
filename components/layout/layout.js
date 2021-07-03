@@ -1,5 +1,7 @@
-import '../../styles/globals.css';
-
-export default function Layout({ Component, pageProps }) {
-    return <Component {...pageProps} />
+export default function Layout({ children, home }) {
+    return (
+        <>
+            {children}
+        </>
+    )
 }

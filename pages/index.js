@@ -4,6 +4,7 @@ import Footer from '../components/footer';
 import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
 import { useState } from 'react';
+import { Fragment } from 'react';
 
 function paginate(array, pageSize = 4, pageNumber = 1) {
     return array.slice((pageNumber - 1) * pageSize, pageNumber * pageSize);
@@ -18,7 +19,6 @@ export async function getStaticProps() {
         }
     }
 }
-
 
 export default function Home({ allPostsData }) {
     const [pageNumber, setPageNumber] = useState(1);
@@ -48,21 +48,23 @@ export default function Home({ allPostsData }) {
                 <div className="row gx-4 gx-lg-5 justify-content-center">
                     <div className="col-md-10 col-lg-8 col-xl-7">
                         {
-                            allPostsData.map(post => {
-                                {/* <!-- Post preview--> */ }
-                                <div className="post-preview">
-                                    <a href="post.html">
-                                        <h2 className="post-title">Man must explore, and this is exploration at its greatest</h2>
-                                        <h3 className="post-subtitle">Problems look mighty small from 150 miles up</h3>
-                                    </a>
-                                    <p className="post-meta">
-                                        Posted by
-                                        <a href="#!">Start Bootstrap</a>
-                                        on September 24, 2021
-                                    </p>
-                                </div>
-                                {/* <!-- Divider--> */ }
-                                <hr className="my-4" />
+                            allPostsData.map((post, index) => {
+                                return (<Fragment key={post.id + index}>
+                                    {/* <!-- Post preview--> */}
+                                    <div className="post-preview" key={post.id}>
+                                        <a href="post.html">
+                                            <h2 className="post-title">{post.title}</h2>
+                                            <h3 className="post-subtitle">Problems look mighty small from 150 miles up</h3>
+                                        </a>
+                                        <p className="post-meta">
+                                            Posted by
+                                            <a href="#!">Start Bootstrap</a>
+                                            on September 24, 2021
+                                        </p>
+                                    </div>
+                                    {/* <!-- Divider--> */}
+                                    <hr className="my-4" key={post.id + index} />
+                                </Fragment>)
                             })
                         }
 

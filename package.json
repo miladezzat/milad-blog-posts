@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -13,6 +14,7 @@
     "gray-matter": "^4.0.3",
     "mongoose": "^5.13.1",
     "next": "11.0.1",
+    "next-sitemap": "^1.6.124",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "reading-time": "^1.3.0",

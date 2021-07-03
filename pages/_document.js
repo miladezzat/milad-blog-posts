@@ -25,11 +25,21 @@ class MyDocument extends Document {
                     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&display=optional" rel="stylesheet" type="text/css" />
                     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossOrigin="anonymous"></script>
 
-                    {/* for google analytics */}
-                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ2KJXR4P6"></script>
 
                     {/* for google search console */}
                     <meta name="google-site-verification" content="_-p2XdKwtGd6MPXJye2VTAIfwoQtDxLoelu7ojSoNqM" />
+
+                    {/* google adsense */}
+                    <script data-ad-client="ca-pub-7839879913941805" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+                    {/* google analytics */}
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ2KJXR4P6"></script>
+                    <script
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                            `
+                        }}
+                    ></script>
                 </Head>
                 <body>
                     <Main />

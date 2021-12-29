@@ -149,11 +149,12 @@ const mime = { // this the files uploaded types
     }
   }
 ```
-1. `const fileRegex = new RegExp(`^/public/.*`, 'i');` create regex expression to check the comming url request is file uploaded url
+1. `const fileRegex = new RegExp(`^/public/.*`, 'i');` create regex expression to check the coming url request is file uploaded url
+
 
 2. `if (fileRegex.test(req.url)) ` check if the url is file uploaded url
 3. `const type = mime[path.extname(fileExtension).slice(1)] || 'text/plain';`, get the file uploaded type
-4.  `const s = fs.createReadStream(`${decodeURI(req.url).replace('/', '')}`);` create a read stream, for more information about stream in nodejs visit <a href='https://nodejs.org/en/knowledge/advanced/streams/how-to-use-fs-create-read-stream/'> https://nodejs.org/en/knowledge/advanced/streams/how-to-use-fs-create-read-stream/</a>
+4.  `const s = fs.createReadStream(`${decodeURI(req.url).replace('/', '')}`);` create a read stream, for more information about stream in nodejs visit [https://nodejs.org/en/knowledge/advanced/streams/how-to-use-fs-create-read-stream/](https://nodejs.org/en/knowledge/advanced/streams/how-to-use-fs-create-read-stream/)
 5. `s.pipe(res);` response by file using pipe, The `readable.pipe()` method in a Readable Stream is used to attach a Writable stream to the readable stream so that it consequently switches into flowing mode and then pushes all the data that it has to the attached Writable.
 
 
@@ -180,7 +181,7 @@ const mime = { // this the files uploaded types
   <h1>My file uploader</h1> // this is just header
 
   File: <input type='file' id='f'> // this is the input, that we used for uploading files
-  <button id='btnUpload'>Read & Upload</button> // jsut button
+  <button id='btnUpload'>Read & Upload</button> // just button
   <div id='divOutput'>
     // the output of uploading display here, progress bar 
   </div>
@@ -194,13 +195,13 @@ const mime = { // this the files uploaded types
     const divOutput = document.getElementById("divOutput"); // get the output file
     const f = document.getElementById("f"); // get the file input
 ```
-4. We will use the `FileReader` object to read the files by browsers as chuncks from more information about `FileReader` you can visit <a href='https://developer.mozilla.org/en-US/docs/Web/API/FileReader'>https://developer.mozilla.org/en-US/docs/Web/API/FileReader</a>
+4. We will use the `FileReader` object to read the files by browsers as chunks from more information about `FileReader` you can visit [https://developer.mozilla.org/en-US/docs/Web/API/FileReader](https://developer.mozilla.org/en-US/docs/Web/API/FileReader)
 
 5. `const fileReader = new FileReader();` create instance for filereader
 6. `const theFile = f.files[0];` get the file 
 7. `fileReader.onload`, this method listen on load file
-8. calculate the number of chuncks of file, ` const chunkCount = Math.floor((ev.target.result.byteLength / (1024 * 1024)) * 0.5) + 1;`
-9. `const CHUNK_SIZE = ev.target.result.byteLength / chunkCount;` chunck size
+8. calculate the number of chunks of file, ` const chunkCount = Math.floor((ev.target.result.byteLength / (1024 * 1024)) * 0.5) + 1;`
+9. `const CHUNK_SIZE = ev.target.result.byteLength / chunkCount;` chunk size
 10. `const fileName = uuid() + '-' + theFile.name;` create unique file name for uploaded file
 11. uuid, this is a method to create unique id for file,
 ```js
@@ -213,7 +214,7 @@ function uuid() {
     }
 ```
 
-13. Upload the file chuncks and display the progress bar
+13. Upload the file chunks and display the progress bar
 ```js
 for (let chunkId = 0; chunkId < chunkCount + 1; chunkId++) {
 
@@ -258,4 +259,4 @@ for (let chunkId = 0; chunkId < chunkCount + 1; chunkId++) {
 ```
 15. `fileReader.readAsArrayBuffer(theFile);` read the file as buffer
 
-for the source code on github <a href="https://github.com/miladezzat/file-uploader-with-progress-bar"> https://github.com/miladezzat/file-uploader-with-progress-bar</a>
+for the source code on github [https://github.com/miladezzat/file-uploader-with-progress-bar](https://github.com/miladezzat/file-uploader-with-progress-bar)

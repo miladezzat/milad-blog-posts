@@ -11,29 +11,28 @@ summary: Docker is a set of platform as a service products that use OS-level vir
 # Docker
 
 1. what is docker
+ **Docker** is a platform for building, running and shipping applications.
 
-<span style="color:green;"> Docker </span> is a platform for building, running and shipping applications.
-
-> <strong>Docker</strong> is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.  [Wikipedia
+> **Docker** is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.  [Wikipedia
 ](https://en.wikipedia.org/wiki/Docker_(software))
 
 Note: docker help us consistently build, run and ship applications
 
-2. Virtual Machines <strong>vs </strong> Containers
+2. Virtual Machines **vs** Containers
 
-<strong> Container </strong> is an isolated environment for running an application
+**Container** is an isolated environment for running an application
 - allow running multiple apps in isolation
 - are lightweight
-- use <strong>OS </strong> of the host
+- use **OS** of the host
 - start quickly
 - need less hardware resources
 
-<strong> Virtual Machine </strong> is an abstriction of a machine (physical hardware)
+**Virtual Machine** is an abstriction of a machine (physical hardware)
 
 3. Architecture of Docker
 
-<strong> Containers </strong> share the kernal of <b>os</b>
-<strong> Akernal</strong> managmes applications and hardware resources
+**Containers** share the kernal of **os**
+**Akerna** managmes applications and hardware resources
 ![container_vs_virtual_machines](/images/Container_VM_Implementation.png)
 
 1. Installing Docker

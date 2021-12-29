@@ -4,6 +4,7 @@ author: Milad E. Fahmy
 title: 'Git Fetch vs Pull: What''s the Difference Between the Git Fetch and Git Pull Commands?'
 created: '2021-06-29T10:25:11.279Z'
 modified: '2021-06-29T10:29:43.300Z'
+date: '2021-06-29'
 ---
 
 # Git Fetch vs Pull: What's the Difference Between the Git Fetch and Git Pull Commands?

@@ -4,13 +4,14 @@ tags: [network]
 title: What is a server
 created: '2021-07-02T12:37:15.422Z'
 modified: '2021-07-02T12:46:36.336Z'
+date: '2021-07-02'
 ---
 
 # What is a Server ?
 
 > In computing, a server is a piece of computer hardware or software that provides functionality for other programs or devices, called "clients". This architecture is called the client–server model. [Wikipedia](https://en.wikipedia.org/wiki/Server_(computing))
 
-<img src="/images/server-1.png" alt="server" class="w-100"/>
+![server-1.png](/images/server-1.png)
 
 > A server is a computer or system that provides resources, data, services, or programs to other computers, known as clients, over a network. In theory, whenever computers share resources with client machines they are considered servers. ... This means that a device could be both a server and a client at the same time.
 
@@ -39,14 +40,14 @@ A server commonly refers to a computer program that receives and responds to req
 
 A web server offers web pages or other content to the web browser by loading the information from a disc and transfer files by using a network to the user's web browser. It is used by a computer or collection of computers to provide content to several users over the internet. This exchange was done with the help of HTTP communicating between the browser and the server. There are some examples of web servers given below; you can also download these web servers from given below download links:
 
-- Apache: https://www.apache.org/
-- Tomcat: https://tomcat.apache.org/
-- Nginx: https://www.nginx.com/
-- Savant: http://savant.sourceforge.net/
-- Boa: http://www.boa.org/
-- FoxServ: http://www.foxserv.net/
-- IIS: https://www.iis.net/
-- Lighttpd: https://www.lighttpd.net/
+- Apache: [https://www.apache.org/](https://www.apache.org/)
+- Tomcat: [https://tomcat.apache.org/](https://tomcat.apache.org/)
+- Nginx: [https://www.nginx.com/](https://www.nginx.com/)
+- Savant: [http://savant.sourceforge.net/](http://savant.sourceforge.net/)
+- Boa: [http://www.boa.org/](http://www.boa.org/)
+- FoxServ: [http://www.foxserv.net/](http://www.foxserv.net/)
+- IIS: [https://www.iis.net/](https://www.iis.net/)
+- Lighttpd: [https://www.lighttpd.net/](https://www.lighttpd.net/)
 
 ### Application server
 

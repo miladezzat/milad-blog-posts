@@ -3,6 +3,7 @@ tags: [Nodejs]
 title: File upload with progress bar (nodejs)
 created: '2021-10-23T08:30:29.755Z'
 modified: '2021-10-23T09:39:25.328Z'
+date: '2021-10-23'
 ---
 
 # File upload with progress bar (nodejs)
@@ -32,7 +33,7 @@ httpServer.listen(port, () => {
 });
 ```
 
-Expalin the code:
+Explain the code:
 1. `const http = require('http');` the `http` is the built in node module, if you want to learn more about http you can visit the origin website https://nodejs.org/api/http.html or https://nodejs.dev/learn/the-nodejs-http-module
 
 2. `const httpServer = http.createServer();` the `http` contains method called `createServer` that we can use it to create server, it is a method turns your computer into an HTTP server
@@ -53,7 +54,7 @@ const server.listen(options[, callback])
 
 ### **Service Html page**
 
-1. **Firstly:** listen on the comming requests
+1. **Firstly:** listen on the coming requests
 ```js
 httpServer.on('request', (req, res) => {});
 ```
@@ -149,12 +150,12 @@ const mime = { // this the files uploaded types
     }
   }
 ```
-1. `const fileRegex = new RegExp(`^/public/.*`, 'i');` create regex expression to check the coming url request is file uploaded url
+1. `const fileRegex = new RegExp(^/public/.*, 'i');` create regex expression to check the coming url request is file uploaded url
 
 
 2. `if (fileRegex.test(req.url)) ` check if the url is file uploaded url
 3. `const type = mime[path.extname(fileExtension).slice(1)] || 'text/plain';`, get the file uploaded type
-4.  `const s = fs.createReadStream(`${decodeURI(req.url).replace('/', '')}`);` create a read stream, for more information about stream in nodejs visit [https://nodejs.org/en/knowledge/advanced/streams/how-to-use-fs-create-read-stream/](https://nodejs.org/en/knowledge/advanced/streams/how-to-use-fs-create-read-stream/)
+4.  `const s = fs.createReadStream(${decodeURI(req.url).replace('/', '')}`);` create a read stream, for more information about stream in nodejs visit [https://nodejs.org/en/knowledge/advanced/streams/how-to-use-fs-create-read-stream/](https://nodejs.org/en/knowledge/advanced/streams/how-to-use-fs-create-read-stream/)
 5. `s.pipe(res);` response by file using pipe, The `readable.pipe()` method in a Readable Stream is used to attach a Writable stream to the readable stream so that it consequently switches into flowing mode and then pushes all the data that it has to the attached Writable.
 
 
@@ -177,6 +178,7 @@ const mime = { // this the files uploaded types
 ```
 
 2. In the body write the following
+
 ```html
   <h1>My file uploader</h1> // this is just header
 
@@ -215,6 +217,7 @@ function uuid() {
 ```
 
 13. Upload the file chunks and display the progress bar
+
 ```js
 for (let chunkId = 0; chunkId < chunkCount + 1; chunkId++) {
 

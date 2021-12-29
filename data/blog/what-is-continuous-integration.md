@@ -4,6 +4,7 @@ tags: [DevOps]
 title: What is Continuous Integration?
 created: '2021-07-28T20:59:51.255Z'
 modified: '2021-07-28T21:12:50.015Z'
+date: '2021-07-28'
 ---
 
 # What is Continuous Integration?

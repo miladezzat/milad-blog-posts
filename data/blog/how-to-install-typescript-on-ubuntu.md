@@ -4,6 +4,7 @@ author: Milad E. Fahmy
 title: How to install typescript on Ubuntu
 created: '2021-06-29T08:00:34.085Z'
 modified: '2021-06-29T08:04:47.289Z'
+date: '2021-06-29'
 ---
 
 ![How to install typescript on Ubuntu](/images/How-to-install-typescript-on-Ubuntu-1.jpeg)

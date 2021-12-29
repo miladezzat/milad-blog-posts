@@ -4,6 +4,7 @@ author: Milad E. Fahmy
 title: How to delete all commit history in git/github
 created: '2021-07-18T23:49:48.308Z'
 modified: '2021-07-18T23:57:12.122Z'
+date: '2021-07-18'
 ---
 
 # How to delete all commit history in git/github

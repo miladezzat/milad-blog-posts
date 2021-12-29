@@ -4,6 +4,7 @@ author: Milad E. Fahmy
 title: How do I rename a local Git branch?
 created: '2021-07-06T09:28:10.586Z'
 modified: '2021-07-06T09:31:23.488Z'
+date: '2021-07-06'
 ---
 
 # How do I rename a local Git branch?

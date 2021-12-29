@@ -4,6 +4,7 @@ author: Milad E. Fahmy
 title: How to change the uri url for a remote git repository
 created: '2021-07-18T14:03:22.890Z'
 modified: '2021-07-18T14:08:00.067Z'
+date: '2021-07-18'
 ---
 
 # How to change the uri url for a remote git repository

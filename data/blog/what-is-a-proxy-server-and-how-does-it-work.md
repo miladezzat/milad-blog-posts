@@ -4,11 +4,12 @@ tags: [network]
 title: What is proxy server ?
 created: '2021-07-02T12:49:47.801Z'
 modified: '2021-07-02T13:48:09.529Z'
+date: '2021-07-02'
 ---
 
 # What is proxy server ?
 
-<img src="/images/proxy-server-1.png" alt="proxy-server" class="w-100" />
+![proxy-server-1.png](/images/proxy-server-1.png)
 
 > In computer networking, a proxy server is a server application or appliance that acts as an intermediary for requests from clients seeking resources from servers that provide those resources. [Wikipedia](https://en.wikipedia.org/wiki/Proxy_server)
 
@@ -28,7 +29,7 @@ In other words, we can say that the proxy server allows us to access any website
 
 ## Mechanism of Proxy Server
 
-<img src="/images/proxy-server-2.jpeg" alt="proxy-server-2" class="w-100" />
+![proxy-server-2.jpeg](/images/proxy-server-2.jpeg)
 
 The proxy server accepts the request from the client and produces a response based on the following conditions:
 
@@ -38,19 +39,19 @@ The proxy server accepts the request from the client and produces a response bas
 
 Therefore, it can be said that the proxy server acts as a client as well as the [server](https://milad-ezzat.vercel.app/posts/what-is-a-server).
 
-<img src="/images/proxy-server-3.png" alt="proxy-server-3" class="w-100"/>
+![/images/proxy-server-3.png](/images/proxy-server-3.png)
 
 ## Types of Proxy Servers
 
 There are many types of proxy servers available. The two most common types of proxy servers are forward and reverse proxy servers. The other proxy server has its own feature and advantages. Let's discuss each in detail.
 
-1. <strong> Open or Forward Proxy Server: </strong> It is the most widely recognized type of intermediary worker that is gotten to by the customer. An open or forward proxy server refers to those sorts of intermediaries that get demands from web clients and afterward peruse destinations to gather the mentioned information. After collecting the data from the sites, it forwards the data to the internet users directly. It bypasses the firewall made by authorities. The following image shows forward proxy configuration.
+1.**Open or Forward Proxy Server:** It is the most widely recognized type of intermediary worker that is gotten to by the customer. An open or forward proxy server refers to those sorts of intermediaries that get demands from web clients and afterward peruse destinations to gather the mentioned information. After collecting the data from the sites, it forwards the data to the internet users directly. It bypasses the firewall made by authorities. The following image shows forward proxy configuration.
 
-<img src="/images/proxy-server-4.jpg" class="w-100" alt="proxy-server-4" />
+![proxy-server-4.jpg](/images/proxy-server-4.jpg)
 
-2. <strong> Reverse Proxy Server: </strong> It is a proxy server that is installed in the neighborhood of multiple other internal resources. It validated and processes a transaction in such a way that the clients do not communicate directly. The most popular reverse proxies are Varnish and Squid. The following image shows the reverse proxy configuration.
+2.**Reverse Proxy Server:** It is a proxy server that is installed in the neighborhood of multiple other internal resources. It validated and processes a transaction in such a way that the clients do not communicate directly. The most popular reverse proxies are Varnish and Squid. The following image shows the reverse proxy configuration.
 
-<img src="/images/proxy-server-5.jpg" class="w-100" alt="proxy-server-5" />
+![proxy-server-5.jpg](/images/proxy-server-5.jpg)
 
 ## Advantages of Proxy Server
 

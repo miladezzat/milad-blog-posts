@@ -23,12 +23,12 @@ The first thing we need to know is that in JavaScript, functions are first-class
 
 ## Callback Functions
 
-The let us can say a <strong> callback function</strong> is a function that is passed as an argument to another function, to be “called back” at a later time. A function that accepts other functions as arguments is called a higher-order function, which contains the logic for when the callback function gets executed. It’s the combination of these two that allow us to extend our functionality.
+The let us can say a  **callback function** is a function that is passed as an argument to another function, to be “called back” at a later time. A function that accepts other functions as arguments is called a higher-order function, which contains the logic for when the callback function gets executed. It’s the combination of these two that allow us to extend our functionality.
 
 ### Examples:
 ![example](/images/callback-javascript-2.png)
 
-<b>Example One:</b> createWelcome is the higher-order function, which accepts two arguments, the second one being the callback. The logWelcomee function is being used to pass in as our callback function. When we execute the createWelcome function (1), notice that we are not appending parentheses to logQuote when we pass it in as an argument. This is because we do not want to execute our callback function right away, we simply want to pass the function definition along to the higher-order function so that it can be executed later.
+**Example One:** createWelcome is the higher-order function, which accepts two arguments, the second one being the callback. The logWelcomed function is being used to pass in as our callback function. When we execute the createWelcome function (1), notice that we are not appending parentheses to logQuote when we pass it in as an argument. This is because we do not want to execute our callback function right away, we simply want to pass the function definition along to the higher-order function so that it can be executed later.
 Also, we need to ensure that if the callback function we pass in expects arguments, that we supply those arguments when executing the callback (2). In the above example, that would be the callback(myMsg); statement, since we know that logWelcome expects a quote to be passed in. other example in MDN: [https://developer.mozilla.org/en-US/docs/Glossary/Callback_function](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function).
 
 ## Why use Callbacks?

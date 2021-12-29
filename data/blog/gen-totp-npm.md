@@ -8,7 +8,7 @@ modified: '2021-06-12T17:42:13.724Z'
 
 # Generate [TOTP](https://www.npmjs.com/package/gen-totp)
 
-<p>This is a npm package for time-based One-time Password is a computer algorithm that generates a one-time password which uses the current time as a source of uniqueness. An extension of the HMAC-based One-time Password algorithm, it has been adopted as Internet Engineering Task Force standard RFC 6238</p>
+This is a npm package for time-based One-time Password is a computer algorithm that generates a one-time password which uses the current time as a source of uniqueness. An extension of the HMAC-based One-time Password algorithm, it has been adopted as Internet Engineering Task Force standard RFC 6238.
 
 1. Installation 
 

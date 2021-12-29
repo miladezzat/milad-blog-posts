@@ -4,6 +4,7 @@ author: Milad E. Fahmy
 title: Type Aliases in TypeScript
 created: '2021-06-17T19:16:03.538Z'
 modified: '2021-06-17T19:23:23.303Z'
+date: '2021-06-17'
 ---
 
 # Type Aliases

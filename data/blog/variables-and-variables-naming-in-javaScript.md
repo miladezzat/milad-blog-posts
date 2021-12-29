@@ -4,6 +4,7 @@ tags: [javascript]
 title: Variables & Variables Naming In JavaScript
 created: '2021-06-28T13:44:40.333Z'
 modified: '2021-06-28T13:59:27.786Z'
+date: '2021-06-28'
 ---
 
 # Variables & Variables Naming In JavaScript
@@ -16,8 +17,8 @@ In computer programming, a variable or scalar is a storage address, It is a symb
 
 > Remember That: variable in programming may not directly correspond to the concept of variables in maths.
 
-> <q> ‘Wikipedia’
-The value of a computing variable is not necessarily part of an equation or formula as in mathematics. Variables in computer programming are frequently given long names to make them relatively descriptive of their use, whereas variables in mathematics often have terse, one- or two-character names for brevity in transcription and manipulation.</q>
+>  ‘Wikipedia’
+The value of a computing variable is not necessarily part of an equation or formula as in mathematics. Variables in computer programming are frequently given long names to make them relatively descriptive of their use, whereas variables in mathematics often have terse, one- or two-character names for brevity in transcription and manipulation.
 
 ![2](/images/varaible-javascript-2.jpeg)
 
@@ -66,17 +67,17 @@ JavaScript is an one of programming language, so variables in JavaScript like in
 * The name can’t be a number ot start with number.
 * It can’t be any of JavaScript’s keywords (like alert, var, const ,..etc).
 
-### Roules for naming Variables in JavaScript
+### Rules for naming Variables in JavaScript
 1. A Variable name can’t contain any space
-2. A variable name can contain only letters, numbers, doller signs, and underscores
+2. A variable name can contain only letters, numbers, dollar signs, and underscores
 3. Though a variable name can’t be any of JavaScript’s keywords, but can contain
 like(myVar, myAlert)
 4. Capital letters are fine, but be careful. variable names are case sensitive
 x is not X, Milad is not milad
 
-> <q>Note best practice for naming use camelCase:
-A camelCase name begins in lower case, if there’s more than one word in the name each subsequent word gets an initial cap. Example: userName, firstName, lastName </q>
-<q>Variable naming is the most default thing in programming, it very default to choose right variable names to your coding, so You should make your variable names descriptive </q>
+> Note best practice for naming use camelCase:
+A camelCase name begins in lower case, if there’s more than one word in the name each subsequent word gets an initial cap. Example: userName, firstName, lastName 
+Variable naming is the most default thing in programming, it very default to choose right variable names to your coding, so You should make your variable names descriptive 
 
 ## JavaScript best practices:
 1. Call things by their name — easy, short and readable variable and function names
@@ -91,5 +92,5 @@ Browsers are very forgiving when it comes to JavaScript syntax. This should not 
 4. Comment as much as needed but not more
 comments in programming is very good idea and very useful thing if you can use it in right way. if it not descriptive enough that’s bad idea for you, also you write comment for every thing in your code this complex for reading code.
 
-<b>For more reading:</b>  [https://www.w3.org/wiki/JavaScript_best_practices]( https://www.w3.org/wiki/JavaScript_best_practices)
+**For more reading:** [https://www.w3.org/wiki/JavaScript_best_practices]( https://www.w3.org/wiki/JavaScript_best_practices)
 

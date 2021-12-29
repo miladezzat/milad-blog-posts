@@ -4,15 +4,16 @@ author: Milad E. Fahmy
 title: Create uuid (unique id)
 created: '2021-06-12T17:16:26.012Z'
 modified: '2021-06-12T17:27:32.045Z'
+date: '2021-06-12'
 ---
 
 # Create uuid (unique id)
 
-<p>If you want to create unique id by javascript that's 
-very easy there are many ways to do this: </p>
+If you want to create unique id by javascript that's 
+very easy there are many ways to do this: 
 
 ## First One 
-<p>This function running in node and browers</p>
+This function running in node and browsers
 
 ```js
 function uuid(){
@@ -28,7 +29,7 @@ function uuid(){
 ```
 ____________
 ## Second One 
-<p> This function worked only in nodejs </p>
+This function worked only in nodejs.
 
 ```js
 function uuid2() {

@@ -4,6 +4,7 @@ author: Milad E. Fahmy
 title: How to Get Started with GraphQL and Node.js
 created: '2021-07-09T21:44:57.556Z'
 modified: '2021-07-11T20:45:04.501Z'
+date: '2021-07-11'
 ---
 
 # How to Get Started with GraphQL and Node.js

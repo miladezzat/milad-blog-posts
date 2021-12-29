@@ -14,7 +14,7 @@ modified: '2021-06-30T15:19:06.291Z'
 ```shell
 sudo snap install --classic heroku
 ```
-for more intstallion: https://devcenter.heroku.com/articles/heroku-cli
+for more installation: https://devcenter.heroku.com/articles/heroku-cli
 
 ## Step 2: login to heroku
 

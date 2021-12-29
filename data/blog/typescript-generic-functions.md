@@ -3,6 +3,7 @@ tags: [TypeScript]
 title: Generic Functions in TypeScript
 created: '2021-06-17T20:55:44.444Z'
 modified: '2021-06-17T20:56:32.002Z'
+date: '2021-06-17'
 ---
 
 # Generic Functions
@@ -23,6 +24,6 @@ function getFilledArray<T>(value: T, n: number): T[] {
 }
 ```
 
-The above code tells TypeScript to make sure that value and the returned array have the same type T. When the function is invoked, we will provide T‘s value. For example, we can invoke the function using getFilledArray<string>('cheese', 3), which sets T equal to string. This still evaluates to ['cheese', 'cheese', 'cheese'], but the function is now correctly typed and less prone to errors. The function getFilledArray<string> is precisely the same as if we had written (value: string, n: number): string[] in its type annotation.
+The above code tells TypeScript to make sure that value and the returned array have the same type T. When the function is invoked, we will provide T‘s value. For example, we can invoke the function using `getFilledArray<string>('cheese', 3)`, which sets T equal to string. This still evaluates to ['cheese', 'cheese', 'cheese'], but the function is now correctly typed and less prone to errors. The function `getFilledArray<string>` is precisely the same as if we had written (value: string, n: number): string[] in its type annotation.
 
-In general, writing generic functions with function functionName<T> allows us to use T within the type annotation as a type placeholder. Later, when the function is invoked, T is replaced with the provided type. 
+In general, writing generic functions with function functionName`<T>` allows us to use T within the type annotation as a type placeholder. Later, when the function is invoked, T is replaced with the provided type. 

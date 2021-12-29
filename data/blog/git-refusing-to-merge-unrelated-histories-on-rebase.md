@@ -4,6 +4,7 @@ author: Milad E. Fahmy
 title: Git refusing to merge unrelated histories on rebase
 created: '2021-07-18T12:11:11.778Z'
 modified: '2021-07-18T12:15:45.778Z'
+date: '2021-07-18'
 ---
 
 # Git refusing to merge unrelated histories on rebase

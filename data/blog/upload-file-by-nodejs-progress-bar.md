@@ -4,6 +4,7 @@ title: File upload with progress bar (nodejs)
 created: '2021-10-23T08:30:29.755Z'
 modified: '2021-10-23T09:39:25.328Z'
 date: '2021-10-23'
+summary: In the tutorial  we will learning how to upload files by nodejs & html without any third party package
 ---
 
 # File upload with progress bar (nodejs)

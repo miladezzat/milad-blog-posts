@@ -5,6 +5,7 @@ title: Asymmetric Encryption using Nodejs Crypto module
 created: '2021-07-18T11:34:50.364Z'
 modified: '2021-07-18T11:35:18.146Z'
 date: '2021-07-18'
+summary: I would recommend not using synchronous fs methods where possible
 ---
 
 # Asymmetric Encryption using Nodejs Crypto module

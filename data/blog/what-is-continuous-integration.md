@@ -5,6 +5,7 @@ title: What is Continuous Integration?
 created: '2021-07-28T20:59:51.255Z'
 modified: '2021-07-28T21:12:50.015Z'
 date: '2021-07-28'
+summary: Continuous integration is a DevOps software development practice where developers regularly merge their code changes into a central repository
 ---
 
 # What is Continuous Integration?

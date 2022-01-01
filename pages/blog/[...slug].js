@@ -3,6 +3,7 @@ import PageTitle from '@/components/PageTitle'
 import generateRss from '@/lib/generate-rss'
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/lib/mdx'
+import readingTime from 'reading-time'
 
 const DEFAULT_LAYOUT = 'PostLayout'
 
@@ -52,6 +53,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
           mdxSource={mdxSource}
           frontMatter={frontMatter}
           authorDetails={authorDetails}
+          time={readingTime(mdxSource).text}
           prev={prev}
           next={next}
         />

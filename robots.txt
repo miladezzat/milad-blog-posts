@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: / 
+
+Sitemap: https://milad-ezzat.vercel.app/sitemap.xml

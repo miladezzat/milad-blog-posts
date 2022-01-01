@@ -10,6 +10,12 @@ const GAScript = () => {
         src={`https://www.googletagmanager.com/gtag/js?id=${siteMetadata.analytics.googleAnalyticsId}`}
       />
 
+      <Script
+        strategy="lazyOnload"
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7839879913941805`}
+        crossOrigin="anonymous"
+      />
+
       <Script strategy="lazyOnload" id="ga-script">
         {`
             window.dataLayer = window.dataLayer || [];

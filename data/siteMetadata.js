@@ -1,8 +1,8 @@
 const siteMetadata = {
-  title: 'Milad Ezzat Blog',
+  title: 'Milad Ezzat',
   author: 'Milad Ezzat',
-  headerTitle: 'miladezzat',
-  description: 'This is a Milad blog post',
+  headerTitle: 'Milad',
+  description: 'Milad is a software engineer, with 3+ years of experience at nodejs',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://milad-ezzat.vercel.app',

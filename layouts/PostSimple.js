@@ -28,6 +28,10 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               </dl>
               <div>
                 <PageTitle>{title}</PageTitle>
+                <amp-auto-ads
+                  type="adsense"
+                  data-ad-client="ca-pub-7839879913941805"
+                ></amp-auto-ads>
               </div>
             </div>
           </header>

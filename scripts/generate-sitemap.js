@@ -38,6 +38,9 @@ const siteMetadata = require('../data/siteMetadata')
                     `
               })
               .join('')}
+            <url>
+              <loc>https://milad-ezzat.vercel.app/ads.txt</loc>
+            </url>
         </urlset>
     `
 

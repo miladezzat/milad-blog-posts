@@ -23,7 +23,6 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {title}
           </h1>
-          <amp-auto-ads type="adsense" data-ad-client="ca-pub-7839879913941805"></amp-auto-ads>
           <div className="relative max-w-lg">
             <input
               aria-label="Search articles"

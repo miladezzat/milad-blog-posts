@@ -21,7 +21,6 @@ export default function Tags({ tags }) {
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 md:border-r-2 md:px-6">
             Tags
           </h1>
-          <amp-auto-ads type="adsense" data-ad-client="ca-pub-7839879913941805"></amp-auto-ads>
         </div>
         <div className="flex flex-wrap max-w-lg">
           {Object.keys(tags).length === 0 && 'No tags found.'}

@@ -13,7 +13,6 @@ export default function AuthorLayout({ children, frontMatter }) {
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             About
           </h1>
-          <amp-auto-ads type="adsense" data-ad-client="ca-pub-7839879913941805"></amp-auto-ads>
         </div>
         <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
           <div className="flex flex-col items-center pt-8 space-x-2">

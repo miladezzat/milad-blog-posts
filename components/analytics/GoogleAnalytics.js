@@ -11,9 +11,16 @@ const GAScript = () => {
       />
 
       <Script
-        strategy="lazyOnload"
-        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7839879913941805`}
+        strategy="afterInteractive"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7839879913941805"
         crossOrigin="anonymous"
+      />
+
+      <Script
+        strategy="afterInteractive"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"
+        crossOrigin="anonymous"
+        customElement="amp-auto-ads"
       />
 
       <Script strategy="lazyOnload" id="ga-script">

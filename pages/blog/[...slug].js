@@ -4,6 +4,7 @@ import generateRss from '@/lib/generate-rss'
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/lib/mdx'
 import readingTime from 'reading-time'
+import { NextSeo } from 'next-seo'
 
 const DEFAULT_LAYOUT = 'PostLayout'
 
@@ -43,9 +44,17 @@ export async function getStaticProps({ params }) {
 
 export default function Blog({ post, authorDetails, prev, next }) {
   const { mdxSource, toc, frontMatter } = post
+  const url = `https://milad-ezzat.vercel.app/blog/${frontMatter.slug}`
+  const metaTags = {
+    title: frontMatter.title,
+    description: frontMatter.summary,
+    canonical: url,
+    openGraph: { url },
+  }
 
   return (
     <>
+      <NextSeo {...metaTags} />
       {frontMatter.draft !== true ? (
         <MDXLayoutRenderer
           layout={frontMatter.layout || DEFAULT_LAYOUT}

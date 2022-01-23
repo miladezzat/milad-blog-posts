@@ -6,8 +6,6 @@ date: '2022-01-17'
 summary: Redis internally uses a hash table to store the elements as a Set.
 ---
 
-# Sets In Redis
-
 ![redis-sets](/static/redis/sets-redis.png)
 
 > In mathematics, a set is a collection of elements. The elements that make up a set can be any kind of mathematical objects: numbers, symbols, points in space, lines, other geometrical shapes, variables, or even other sets. The set with no element is the empty set; a set with a single element is a singleton.

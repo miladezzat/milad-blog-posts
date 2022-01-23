@@ -6,8 +6,6 @@ date: '2022-01-16'
 summary: The Redis database internally stores List as a linked list. This linked list has a `head` and `tail`
 ---
 
-# Storing Lists in Redis
-
 ## Insertion Commands
 
 > The Redis database internally stores List as a linked list. This linked list has a `head` and `tail`. [Read More](https://www.programiz.com/dsa/linked-list)

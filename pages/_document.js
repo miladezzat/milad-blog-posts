@@ -37,7 +37,45 @@ class MyDocument extends Document {
 
           <meta
             httpEquiv="Content-Security-Policy"
-            content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;"
+            content="
+            default-src
+              'self'
+              ;
+            child-src
+              'self'
+              blob:
+              ;
+            connect-src
+              'self'
+              *
+              ;
+            font-src
+              'self'
+              ;
+            frame-src
+              'self'
+              ;
+            img-src
+              'self'
+              data:
+              *
+              ;
+            script-src
+              'self'
+              'unsafe-eval'
+              'unsafe-inline'
+              https://cdn.segment.com
+              https://assets.customer.io
+              https://secure.gaug.es
+              https://www.google-analytics.com
+              https://www.google.com
+              https://fonts.googleapis.com
+              ;
+            style-src
+              'self'
+              'unsafe-inline'
+              ;
+          "
           />
         </Head>
         <body className="antialiased text-black bg-white dark:bg-gray-900 dark:text-white">

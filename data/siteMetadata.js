@@ -6,7 +6,7 @@ const siteMetadata = {
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://milad-ezzat.vercel.app',
-  siteRepo: 'https://github.com/miladezzat',
+  siteRepo: 'https://github.com/miladezzat/milad-blog-posts',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/avatar.png',

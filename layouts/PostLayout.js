@@ -16,8 +16,8 @@ const discussUrl = (slug) =>
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
-export default function PostLayout({ frontMatter, authorDetails, time, next, prev, children }) {
-  const { slug, fileName, date, title, tags } = frontMatter
+export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
+  const { slug, fileName, date, title, tags, readingTime } = frontMatter
 
   return (
     <SectionContainer>
@@ -38,7 +38,7 @@ export default function PostLayout({ frontMatter, authorDetails, time, next, pre
                     <time dateTime={date}>
                       {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                       {' | '}
-                      {time}
+                      ☕️ {readingTime.text}
                     </time>
                   </dd>
                 </div>

@@ -9,8 +9,12 @@ metaTagImage: /static/images/git/branching.png
 ![git branching](/static/images/git/branching.png)
 
 ## Related Links
-1. [Introduction To Git](https://milad-ezzat.vercel.app/blog/git/introduction-to-git)
-2. [Git Basics](https://milad-ezzat.vercel.app/blog/git/git-basic)
+   - [Introduction To Git](https://milad-ezzat.vercel.app/blog/git/introduction-to-git)
+   - [Git Basics](https://milad-ezzat.vercel.app/blog/git/git-basic)
+   - [Git Branching](https://milad-ezzat.vercel.app/blog/git/git-branching)
+   - [Git Stash](https://milad-ezzat.vercel.app/blog/git/git-stash)
+
+## Topics
 
 1. What is Branching In Git?
 2. Create Branch

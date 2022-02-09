@@ -6,10 +6,19 @@ summary: Git is a software program, it's easy to install on your local PC, based
 metaTagImage: /static/images/git/git-basics.png
 ---
 
+## Related Links
+   - [Introduction To Git](https://milad-ezzat.vercel.app/blog/git/introduction-to-git)
+   - [Git Basics](https://milad-ezzat.vercel.app/blog/git/git-basic)
+   - [Git Branching](https://milad-ezzat.vercel.app/blog/git/git-branching)
+   - [Git Stash](https://milad-ezzat.vercel.app/blog/git/git-stash)
+
+
 ![Git Basics](/static/images/git/git-basics.png)
 
-- **How to install Git**
-- **Git Commands**
+## Topics
+
+1. How to install Git
+2. Git Commands
     - `git init` 
     - `.git folder`
     - `git log`

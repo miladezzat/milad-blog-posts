@@ -3,7 +3,7 @@ tags: [GIT]
 title: Git Stash
 date: '2022-02-09'
 summary: Git stash is a built-in command with the distributed Version control tool in Git that locally stores all the most recent changes in a workspace and resets the state of the workspace to the prior commit state.
-metaTagImage: /static/images/git/git-basics.png
+metaTagImage: /static/images/git/git-stash.png
 ---
 
 ## Related Links

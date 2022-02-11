@@ -23,6 +23,19 @@ const projectsData = [
     imgSrc: '/static/projects/memoz.jpg',
     href: 'https://memoz.js.org',
   },
+  {
+    title: 'Gen TOTP',
+    description:
+      'Time-based One-Time Password: Time-based One-time Password is a computer algorithm that generates a one-time password which uses the current time as a source of uniqueness',
+    imgSrc: '/static/projects/totp.jpeg',
+    href: 'https://60-min-code.github.io/gen-totp',
+  },
+  {
+    title: 'Image Processing Service',
+    description: 'This website, compression, and processes images and convert their format live',
+    imgSrc: '/static/projects/image-proccessing.png',
+    href: 'https://images-process.herokuapp.com/',
+  },
 ]
 
 export default projectsData

@@ -36,6 +36,12 @@ const projectsData = [
     imgSrc: '/static/projects/image-proccessing.png',
     href: 'https://images-process.herokuapp.com/',
   },
+  {
+    title: 'Sakneen Master Plan Tool',
+    description: 'The cool project built on top of map box',
+    imgSrc: '/static/projects/sakneen-master-plan-tool.png',
+    href: 'https://sakneen-masterplan-tool.herokuapp.com/',
+  },
 ]
 
 export default projectsData

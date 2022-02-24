@@ -1,11 +1,8 @@
 const projectsData = [
   {
     title: 'Node.js',
-    description: `This course is aimed at developers who already have an understanding of JavaScript, MongoDB,Express.js, and APIs. This mini-course is ideal for you if:
-    - You are a busy professional who wants to understand. how you set up a scalable structure for your project.
-    - You want to set up a good validation layer.
-    - You want to understand authentication.`,
-    imgSrc: 'https://miladezzat.github.io/images/node-js.png',
+    description: `This course is aimed at developers who already have an understanding of JavaScript, MongoDB,Express.js, and APIs.`,
+    imgSrc: '/static/courses/node-js-intermidaite-course.png',
     href: 'https://miladezzat.github.io',
   },
   {

@@ -3,8 +3,6 @@ import PageTitle from '@/components/PageTitle'
 import generateRss from '@/lib/generate-rss'
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/lib/mdx'
-import { NextSeo } from 'next-seo'
-import { siteUrl } from '@/data/siteMetadata'
 
 const DEFAULT_LAYOUT = 'PostLayout'
 
@@ -45,31 +43,8 @@ export async function getStaticProps({ params }) {
 export default function Blog({ post, authorDetails, prev, next }) {
   const { mdxSource, toc, frontMatter } = post
 
-  const url = `${siteUrl}/blog/${frontMatter.slug}`
-
-  const metaTags = {
-    title: frontMatter.title,
-    description: frontMatter.summary,
-    canonical: url,
-    openGraph: { url },
-  }
-
-  if (frontMatter.metaTagImage) {
-    metaTags.openGraph = {
-      images: [
-        {
-          url: `${siteUrl}${frontMatter.metaTagImage}`,
-          width: 800,
-          height: 600,
-          alt: frontMatter.title,
-        },
-      ],
-    }
-  }
-
   return (
     <>
-      <NextSeo {...metaTags} />
       {frontMatter.draft !== true ? (
         <MDXLayoutRenderer
           layout={frontMatter.layout || DEFAULT_LAYOUT}

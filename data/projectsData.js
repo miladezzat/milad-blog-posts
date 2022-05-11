@@ -42,6 +42,13 @@ const projectsData = [
     imgSrc: '/static/projects/sakneen-master-plan-tool.png',
     href: 'https://sakneen-masterplan-tool.herokuapp.com/',
   },
+  {
+    title: 'The App by Babyation®',
+    description:
+      'Control your pump…all from the palm of your hand. The App by Babyation® is a one-stop-shop for discreetly adjusting your pump, viewing real-time milk expression, monitoring your stash of pumped milk, and tracking your baby’s feedings, whether they’re from pumping, nursing, or bottle feeding.',
+    imgSrc: '/static/projects/babyation.png',
+    href: 'https://play.google.com/store/apps/details?id=com.babyation.pump',
+  },
 ]
 
 export default projectsData

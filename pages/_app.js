@@ -22,20 +22,10 @@ export default function App({ Component, pageProps }) {
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
       <Script
-        async
         strategy="beforeInteractive"
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7839879913941805"
-        crossorigin="anonymous"
+        crossOrigin="anonymous"
       ></Script>
-      {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-      <Script
-        strategy="beforeInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-XZ2KJXR4P6"
-      ></Script>
-      <Script strategy="afterInteractive">
-        window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments)}
-        gtag('js', new Date()); gtag('config', 'G-XZ2KJXR4P6');
-      </Script>
       {isDevelopment && isSocket && <ClientReload />}
       <Analytics />
       <LayoutWrapper>

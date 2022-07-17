@@ -49,6 +49,24 @@ const projectsData = [
     imgSrc: '/static/projects/babyation.png',
     href: 'https://play.google.com/store/apps/details?id=com.babyation.pump',
   },
+  {
+    title: 'Sakneen App (Android)',
+    description: `Sakneen Valuation™ is based on a unique pricing algorithm that we built to bring information & transparency to the real estate industry in Egypt.`,
+    imgSrc: '/static/projects/sakneen-app-android.png',
+    href: 'https://play.google.com/store/apps/details?id=com.sakneen.App',
+  },
+  {
+    title: 'Sakneen App (IOS)',
+    description: `Sakneen Valuation™ is based on a unique pricing algorithm that we built to bring information & transparency to the real estate industry in Egypt.`,
+    imgSrc: '/static/projects/sakneen-app-ios.png',
+    href: 'https://apps.apple.com/us/app/sakneen-%D8%B3%D8%A7%D9%83%D9%86%D9%8A%D9%86/id1631737791',
+  },
+  {
+    title: 'Shariiky',
+    description: `Shariiky is a relationship specialist that empowers life partners to strengthen their relations with their soulmates.`,
+    imgSrc: '/static/projects/shariiky.png',
+    href: 'https://apps.apple.com/eg/app/shariiky-%D8%B4-%D8%B1%D9%8A%D9%83%D9%8A/id1624373780',
+  },
 ]
 
 export default projectsData

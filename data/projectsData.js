@@ -67,6 +67,18 @@ const projectsData = [
     imgSrc: '/static/projects/shariiky.png',
     href: 'https://apps.apple.com/eg/app/shariiky-%D8%B4-%D8%B1%D9%8A%D9%83%D9%8A/id1624373780',
   },
+  {
+    title: 'Socialstack Market',
+    description: `Socialstack is the social token platform that gives a damn. Our platform enables community leaders and members to easily co-create value, while accomplishing impact missions.`,
+    imgSrc: '/static/projects/social-stack-market.png',
+    href: 'https://community.socialstack.co/login',
+  },
+  {
+    title: 'Socialstack Dashboard',
+    description: `Socialstack is the social token platform that gives a damn. Our platform enables community leaders and members to easily co-create value, while accomplishing impact missions.`,
+    imgSrc: '/static/projects/socail-stack-dashboard.png',
+    href: 'https://admin.socialstack.co/login',
+  },
 ]
 
 export default projectsData

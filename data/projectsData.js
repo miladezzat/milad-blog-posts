@@ -79,6 +79,12 @@ const projectsData = [
     imgSrc: '/static/projects/socail-stack-dashboard.png',
     href: 'https://admin.socialstack.co/login',
   },
+  {
+    title: 'Monolith Brands',
+    description: `Monolith Brands Group invests in consumer product businesses and provides them with the capital and resources needed for growth.`,
+    imgSrc: '/static/projects/monolithbrands.png',
+    href: 'https://www.monolithbrands.com/',
+  },
 ]
 
 export default projectsData

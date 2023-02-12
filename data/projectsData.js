@@ -68,22 +68,47 @@ const projectsData = [
     href: 'https://apps.apple.com/eg/app/shariiky-%D8%B4-%D8%B1%D9%8A%D9%83%D9%8A/id1624373780',
   },
   {
-    title: 'Socialstack Market',
-    description: `Socialstack is the social token platform that gives a damn. Our platform enables community leaders and members to easily co-create value, while accomplishing impact missions.`,
-    imgSrc: '/static/projects/social-stack-market.png',
-    href: 'https://community.socialstack.co/login',
+    title: 'Values Co Market',
+    description: `ValuesCo is the social token platform that gives a damn. Our platform enables community leaders and members to easily co-create value, while accomplishing impact missions.`,
+    imgSrc: '/static/projects/values-co-market-place.png',
+    href: 'https://app.values.co/login',
   },
   {
-    title: 'Socialstack Dashboard',
-    description: `Socialstack is the social token platform that gives a damn. Our platform enables community leaders and members to easily co-create value, while accomplishing impact missions.`,
-    imgSrc: '/static/projects/socail-stack-dashboard.png',
-    href: 'https://admin.socialstack.co/login',
+    title: 'Values Co Dashboard',
+    description: `ValuesCo is the social token platform that gives a damn. Our platform enables community leaders and members to easily co-create value, while accomplishing impact missions.`,
+    imgSrc: '/static/projects/values-co-admin.png',
+    href: 'https://admin.values.co/login',
   },
   {
     title: 'Monolith Brands',
     description: `Monolith Brands Group invests in consumer product businesses and provides them with the capital and resources needed for growth.`,
     imgSrc: '/static/projects/monolithbrands.png',
     href: 'https://www.monolithbrands.com/',
+  },
+  {
+    title: 'Derived Art Market',
+    description: `NFT art of remixed key historical moments co-created by the world's leading artists and cultural institutions`,
+    imgSrc: '/static/projects/delivered-art-user.png',
+    href: 'https://derived.art',
+  },
+  {
+    title: 'Derived Art Admin Board',
+    description: `NFT art of remixed key historical moments co-created by the world's leading artists and cultural institutions`,
+    imgSrc: '/static/projects/delivered-art-admin.png',
+    href: 'https://admin.derived.art/',
+  },
+  {
+    title: 'Derived Art Museum Board',
+    description: `NFT art of remixed key historical moments co-created by the world's leading artists and cultural institutions`,
+    imgSrc: '/static/projects/delivered-art-musuem.png',
+    href: 'https://museum.derived.art/login',
+  },
+  {
+    title: 'NestJs DB Seeder',
+    description:
+      'This library does not depend on the database type that you use. to seeding fake or real data',
+    imgSrc: '/static/projects/nestjs-db-seeder.png',
+    href: 'https://www.npmjs.com/package/nestjs-db-seeder',
   },
 ]
 

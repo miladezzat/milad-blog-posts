@@ -17,6 +17,12 @@ const projectsData = [
     imgSrc: '/static/courses/nodejs.png',
     href: 'https://www.youtube.com/playlist?list=PLuKPy8deEe6ZcfsnE7Rjhvt8vkenJtsnH',
   },
+  {
+    title: 'Intermediate Node.js Course',
+    description: `Intermediate Node.js Course`,
+    imgSrc: '/static/courses/node-js-intermidaite-course.png',
+    href: 'https://miladezzat.github.io/Intermediate-Node.js/#/',
+  },
 ]
 
 export default projectsData

@@ -20,6 +20,11 @@ export default function App({ Component, pageProps }) {
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7839879913941805"
+          crossOrigin="anonymous"
+        ></script>
       </Head>
       <Script
         strategy="beforeInteractive"

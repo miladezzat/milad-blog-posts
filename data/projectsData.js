@@ -110,6 +110,27 @@ const projectsData = [
     imgSrc: '/static/projects/nestjs-db-seeder.png',
     href: 'https://www.npmjs.com/package/nestjs-db-seeder',
   },
+  {
+    title: 'PuraVida Marketplace',
+    description:
+      "Pura Vida Bitcoin Services. Pura Vida Bitcoin's platform has all the services necessary for Costa Ricans to entirely adopt Bitcoin as their daily currency.",
+    imgSrc: '/static/projects/puravida-market.png',
+    href: 'https://market.puravidabitcoin.io',
+  },
+  {
+    title: 'PuraVida Dashboard',
+    description:
+      "Pura Vida Bitcoin Services. Pura Vida Bitcoin's platform has all the services necessary for Costa Ricans to entirely adopt Bitcoin as their daily currency.",
+    imgSrc: '/static/projects/puravida-dashboard.png',
+    href: 'https://admin.market.puravidabitcoin.io/login',
+  },
+  {
+    title: 'Time.Cards',
+    description:
+      "This app is a time tracking app, that helps you to track your time and your team time. it's multi-tenant app, and it's free for now.",
+    imgSrc: '/static/projects/puravida-dashboard.png',
+    href: 'https://dasix.time.cards',
+  },
 ]
 
 export default projectsData

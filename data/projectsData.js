@@ -128,7 +128,7 @@ const projectsData = [
     title: 'Time.Cards',
     description:
       "This app is a time tracking app, that helps you to track your time and your team time. it's multi-tenant app, and it's free for now.",
-    imgSrc: '/static/projects/puravida-dashboard.png',
+    imgSrc: '/static/projects/time-cards.png',
     href: 'https://dasix.time.cards',
   },
 ]

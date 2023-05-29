@@ -18,7 +18,9 @@ summary: In Go, the context package provides a powerful mechanism for managing t
 In Go, the context package provides a powerful mechanism for managing the lifecycle of operations and **propagating cancellation signals across goroutine**. It allows you to set deadlines, timeouts, and cancellation signals, helping you control the execution of your code and handle resource cleanup gracefully. There are three commonly used functions in the context package for managing cancellation: WithCancel, WithTimeout, and WithDeadline.
 
 > **1.WithCancel:** WithCancel returns a derived Context and a CancelFunc. You can call the CancelFunc to cancel the Context manually. This is useful when you want to cancel an operation explicitly or based on some condition.
+>
 > **2.WithTimeout:** WithTimeout returns a derived Context that is automatically canceled after a specified timeout duration. This is useful when you want to limit the execution time of an operation
+>
 > **3.WithDeadline:** WithDeadline returns a derived Context that is automatically canceled at a specified deadline time. This is useful when you want to set an absolute deadline for an operation.
 
 

@@ -131,6 +131,12 @@ const projectsData = [
     imgSrc: '/static/projects/time-cards.png',
     href: 'https://dasix.time.cards',
   },
+  {
+    title: 'PuraVida Bitcoin App',
+    description: 'An easy to use Custodial Bitcoin and Lightning wallet geared for Costa Rica.',
+    imgSrc: '/static/projects/puravida-bitcoin-app.png',
+    href: 'https://play.google.com/store/apps/details?id=io.puravidabitcoin.app',
+  },
 ]
 
 export default projectsData

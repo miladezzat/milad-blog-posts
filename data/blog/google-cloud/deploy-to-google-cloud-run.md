@@ -9,6 +9,9 @@ summary: How to deploy application to google cloud run?
 
 # Deploy to Cloud Run with GitHub Actions
 
+![head](/static/images/google-cloud/deploy-to-google-cloud-run.jpg)
+
+
 **Prerequisites**
 
 - A Google Cloud project

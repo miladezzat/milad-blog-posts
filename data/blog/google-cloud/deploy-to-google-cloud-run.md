@@ -10,17 +10,20 @@ summary: How to deploy application to google cloud run?
 # Deploy to Cloud Run with GitHub Actions
 
 **Prerequisites**
+
 - A Google Cloud project
 - A GitHub repository
 - Cloud Run Service (you can create it from google cloud dashboard)
 
 ## Create Workload Identity Federation
+
 Using Workload Identity Federation, you can provide on-premises or multicloud workloads with access to Google Cloud resources by using federated identities instead of a service account key.
 
 1. Create a Workload Identity Pool
-> It is recommended to create and manage workload identity pools from a single dedicated project.
+   > It is recommended to create and manage workload identity pools from a single dedicated project.
 
 **You can create it via the command line or the dashboard:**
+
 ```bash
 gcloud iam workload-identity-pools create "<WORKLOAD_IDENTITY_POOL_ID>" \
   --location="global" \
@@ -30,7 +33,7 @@ gcloud iam workload-identity-pools create "<WORKLOAD_IDENTITY_POOL_ID>" \
 ```
 
 2. Create a Workload Identity Pool Provider
-The `issuer-uri` identifies GitHub as the identity provider and lets Workload Identity discover the OIDC metadata and JSON Web Key Set (JWKs) endpoints. Google Cloud uses these endpoints to validate tokens.
+   The `issuer-uri` identifies GitHub as the identity provider and lets Workload Identity discover the OIDC metadata and JSON Web Key Set (JWKs) endpoints. Google Cloud uses these endpoints to validate tokens.
 
 GitHub issues a unique token for each workflow job. This token contains claims that describe the identity of the workflow. By using attribute mapping, we translate the claims in the token so that we can use them in principal/principalSet identifiers to grant access to service accounts or create an attribute condition.
 
@@ -45,9 +48,11 @@ gcloud iam workload-identity-pools providers create-oidc gcr-d-apis-oidc \
 ```
 
 ## Create a Service Account
+
 Create a service account for each repository and assign them appropriate IAM permissions.
 
 **You can use the Dashboard, but the service account must have the following permissions:**
+
 - roles/artifactregistry.admin
 - roles/artifactregistry.writer
 - roles/cloudbuild.builds.editor
@@ -135,22 +140,26 @@ jobs:
 ```
 
 ## Add Secrets to GitHub Repository
+
 Add the following secrets to your GitHub repository:
+
 - GCP_PROJECT_ID
 - GCP_SERVICE_NAME
 - GCP_REGION
 - GCP_SERVICE_ACCOUNT_EMAIL
-- GCP_WORKLOAD_IDENTITY_PROVIDER 
-  
+- GCP_WORKLOAD_IDENTITY_PROVIDER
+
   > Note that: The workload identity pool (GCP_WORKLOAD_IDENTITY_PROVIDER) is configured as "projects/<PROJECT_ID>/locations/global/workloadIdentityPools/<WORKLOAD_IDENTITY_POOL_ID>/providers/<WORKLOAD_IDENTITY_PROVIDER_ID>"
 
 ## Deploy to Cloud Run
+
 Push your changes to the main branch, and the GitHub Actions workflow will deploy your application to Cloud Run.
 
 ## Conclusion
+
 In this tutorial, you learned how to use Workload Identity Federation to authenticate GitHub Actions to Google Cloud. You also learned how to create a Workload Identity Pool, a Workload Identity Pool Provider, and a Service Account. Finally, you updated the GitHub Actions workflow to use the Workload Identity Pool to authenticate to Google Cloud and deployed your application to Cloud Run.
 
 ## References
+
 - [Workload Identity Federation](https://cloud.google.com/iam/docs/workload-identity-federation)
 - [GitHub Actions](https://docs.github.com/en/actions)
-  

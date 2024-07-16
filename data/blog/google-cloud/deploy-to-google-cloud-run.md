@@ -75,6 +75,13 @@ gcloud iam service-accounts add-iam-policy-binding "SERVICE_ACCOUNT_EMAIL" \
   --role="roles/iam.workloadIdentityUser" \
   --member="principal://iam.googleapis.com/projects/PROJECT_ID/locations/global/workloadIdentityPools/gcr-d-apis-pool/subject/repo:SamTech-inc/gcr-d-apis:ref:refs/heads/main" \
   --project="PROJECT_ID"
+
+  ## And
+
+gcloud iam service-accounts add-iam-policy-binding "SERVICE_ACCOUNT_EMAIL" \
+    --role="roles/iam.workloadIdentityUser" \
+    --member="principalSet://iam.googleapis.com/projects/"PROJECT_ID"/locations/global/workloadIdentityPools/gcr-d-apis-pool/attribute.repository/gcr-d-apis-oidc" \                
+    --project="PROJECT_ID"
 ```
 
 ## Update the GitHub Actions Workflow to Use the Workload Identity Pool to Authenticate to Google Cloud

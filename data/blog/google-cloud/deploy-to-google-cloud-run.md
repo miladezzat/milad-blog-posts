@@ -159,7 +159,10 @@ Add the following secrets to your GitHub repository:
 - GCP_SERVICE_ACCOUNT_EMAIL
 - GCP_WORKLOAD_IDENTITY_PROVIDER
 
-**Note that:** The workload identity pool (GCP_WORKLOAD_IDENTITY_PROVIDER) is configured as "projects/PROJECT_ID/locations/global/workloadIdentityPools/WORKLOAD_IDENTITY_POOL_ID/providers/WORKLOAD_IDENTITY_PROVIDER_ID"
+**Note that:** The workload identity pool (GCP_WORKLOAD_IDENTITY_PROVIDER) is configured as 
+```
+"projects/PROJECT_ID/locations/global/workloadIdentityPools/WORKLOAD_IDENTITY_POOL_ID/providers/WORKLOAD_IDENTITY_PROVIDER_ID"
+```
 
 ## Deploy to Cloud Run
 

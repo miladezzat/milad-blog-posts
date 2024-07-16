@@ -25,11 +25,11 @@ Using Workload Identity Federation, you can provide on-premises or multicloud wo
 **You can create it via the command line or the dashboard:**
 
 ```bash
-gcloud iam workload-identity-pools create "<WORKLOAD_IDENTITY_POOL_ID>" \
+gcloud iam workload-identity-pools create "WORKLOAD_IDENTITY_POOL_ID" \
   --location="global" \
   --description="The pool to authenticate GitHub actions for my APIs pool." \
   --display-name="My APIs Project Pool" \
-  --project="<PROJECT_ID>"
+  --project="PROJECT_ID"
 ```
 
 2. Create a Workload Identity Pool Provider
@@ -44,7 +44,7 @@ gcloud iam workload-identity-pools providers create-oidc gcr-d-apis-oidc \
   --attribute-mapping="google.subject=assertion.sub,attribute.repository=assertion.repository,attribute.repository_owner=assertion.repository_owner,attribute.branch=assertion.sub.extract('/heads/main/')" \
   --location=global \
   --attribute-condition="assertion.repository_owner=='SamTech-inc'" \
-  --project="<PROJECT_ID>"
+  --project="PROJECT_ID"
 ```
 
 ## Create a Service Account
@@ -68,10 +68,10 @@ Create a service account for each repository and assign them appropriate IAM per
 Utilize previously mapped attributes to create principals/principalSets, and then use them in IAM bindings to grant permissions to create short-lived credentials for the appropriate service account.
 
 ```bash
-gcloud iam service-accounts add-iam-policy-binding "<SERVICE_ACCOUNT_EMAIL>" \
+gcloud iam service-accounts add-iam-policy-binding "SERVICE_ACCOUNT_EMAIL" \
   --role="roles/iam.workloadIdentityUser" \
-  --member="principal://iam.googleapis.com/projects/<PROJECT_ID>/locations/global/workloadIdentityPools/gcr-d-apis-pool/subject/repo:SamTech-inc/gcr-d-apis:ref:refs/heads/main" \
-  --project="<PROJECT_ID>"
+  --member="principal://iam.googleapis.com/projects/PROJECT_ID/locations/global/workloadIdentityPools/gcr-d-apis-pool/subject/repo:SamTech-inc/gcr-d-apis:ref:refs/heads/main" \
+  --project="PROJECT_ID"
 ```
 
 ## Update the GitHub Actions Workflow to Use the Workload Identity Pool to Authenticate to Google Cloud
@@ -149,7 +149,7 @@ Add the following secrets to your GitHub repository:
 - GCP_SERVICE_ACCOUNT_EMAIL
 - GCP_WORKLOAD_IDENTITY_PROVIDER
 
-  > Note that: The workload identity pool (GCP_WORKLOAD_IDENTITY_PROVIDER) is configured as "projects/<PROJECT_ID>/locations/global/workloadIdentityPools/<WORKLOAD_IDENTITY_POOL_ID>/providers/<WORKLOAD_IDENTITY_PROVIDER_ID>"
+  > Note that: The workload identity pool (GCP_WORKLOAD_IDENTITY_PROVIDER) is configured as "projects/PROJECT_ID/locations/global/workloadIdentityPools/WORKLOAD_IDENTITY_POOL_ID/providers/WORKLOAD_IDENTITY_PROVIDER_ID"
 
 ## Deploy to Cloud Run
 

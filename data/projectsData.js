@@ -6,31 +6,6 @@ const projectsData = [
     href: 'https://www.sakneen.com/en',
   },
   {
-    title: 'Encrypt By RSA Algorithm',
-    description: 'This is an open source package for encrypt.',
-    imgSrc: '/static/projects/error-handler-e2.png',
-    href: 'https://miladezzat.github.io/encrypt-rsa',
-  },
-  {
-    title: 'Error Handler E2',
-    description: 'This is an open source package for nodejs error handler.',
-    imgSrc: '/static/projects/error-handler-e2.png',
-    href: 'https://miladezzat.github.io/error-handler-e2',
-  },
-  {
-    title: 'Memoz',
-    description: 'Memoz is an in-memory database that persists on disk.',
-    imgSrc: '/static/projects/memoz.jpg',
-    href: 'https://memoz.js.org',
-  },
-  {
-    title: 'Gen TOTP',
-    description:
-      'Time-based One-Time Password: Time-based One-time Password is a computer algorithm that generates a one-time password which uses the current time as a source of uniqueness',
-    imgSrc: '/static/projects/totp.jpeg',
-    href: 'https://60-min-code.github.io/gen-totp',
-  },
-  {
     title: 'The App by Babyation®',
     description:
       'Control your pump…all from the palm of your hand. The App by Babyation® is a one-stop-shop for discreetly adjusting your pump, viewing real-time milk expression, monitoring your stash of pumped milk, and tracking your baby’s feedings, whether they’re from pumping, nursing, or bottle feeding.',
